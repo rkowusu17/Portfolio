@@ -261,9 +261,10 @@ footer a:hover {
     font-size: 16px;
   }
 
-  /* form{
-        display: block;
-    }
+  form {
+    display: block;
+  }
+  /*
     li{  
         display: inline-flex; 
         justify-content: space-evenly;  
