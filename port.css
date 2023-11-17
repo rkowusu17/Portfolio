@@ -11,7 +11,7 @@
   --DARK: #333;
   --FS: clamp(40px, 2rem, 10px);
 }
-.about__body {
+body {
   word-spacing: 0.5px;
   font-size: 20px;
   color: black;
@@ -152,7 +152,7 @@ nav ul {
 
 /*End of drop-down menu*/
 
-img {
+.profile-img {
   float: right;
   background-color: black;
   width: 20%;
@@ -216,7 +216,7 @@ footer a:hover {
     font-size: 25px;
   }
 
-  img {
+  profile-img {
     width: 40%;
     height: 40%;
   }
@@ -255,7 +255,7 @@ footer a:hover {
     display: none;
   }
 
-  .img {
+  .profile-img {
     min-width: 200px;
     min-height: 200px;
     font-size: 16px;
@@ -290,7 +290,7 @@ footer a:hover {
         padding: 2rem;
     }
     
-    img{
+    profile-img{
         width:100px; 
         height : 100px;
     } */

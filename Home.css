@@ -5,12 +5,12 @@
 }
 header,
 footer {
-  width: 100%;
-  font-size: 2rem;
-  padding: 0.3rem;
-  margin: 0px auto;
   background-color: rgba(238, 219, 12, 0.7);
+  font-size: 2rem;
+  margin: 0px auto;
+  padding: 0.3rem;
   position: sticky;
+  width: 100%;
 }
 header {
   top: 0;
