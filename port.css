@@ -4,6 +4,9 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --normalc: rgba(235, 189, 106, 0.8);
@@ -191,6 +194,10 @@ abbr:hover {
   margin: 2rem auto;
   border-radius: 15px;
 }
+.head {
+  text-align: center;
+  border-bottom: 2px solid var(--DARK);
+}
 .social {
   text-align: center;
 }
@@ -202,6 +209,34 @@ abbr:hover {
   color: blue;
 }
 
+fieldset {
+  border: none;
+  border-top: 1px solid #333;
+}
+legend {
+  text-align: center;
+}
+input,
+textarea {
+  padding: 1rem;
+}
+textarea {
+  border-radius: 10px;
+  resize: none;
+}
+input,
+button {
+  height: 30px;
+  border-radius: 10px;
+}
+button {
+  width: 100px;
+  margin-left: 50%;
+}
+button:active {
+  border: none;
+  background-color: burlywood;
+}
 footer {
   font-size: 30px;
   text-align: center;
