@@ -3,9 +3,12 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 header,
 footer {
-  background-color: rgba(238, 219, 12, 0.7);
+  background-color: rgba(238, 219, 12, 0.5);
   font-size: 2rem;
   margin: 0px auto;
   padding: 0.3rem;
@@ -39,8 +42,8 @@ nav {
   border: 2px solid #333;
   border-radius: 2rem;
   margin: 2.5rem auto;
-  max-width: 600px;
-  font-size: 3rem;
+  max-width: 90%;
+  font-size: 2rem;
   line-height: 7rem;
   background-color: whitesmoke;
 }
@@ -87,7 +90,31 @@ section {
   max-width: 800px;
   margin: 1.5rem auto;
 }
-
+section {
+  width: 80%;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section :hover p {
+  text-decoration: underline;
+}
+section button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.about {
+  width: 90%;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+.about img {
+  border-radius: 50%;
+}
 footer i {
   width: 50px;
 }
