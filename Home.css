@@ -6,9 +6,12 @@
 html {
   scroll-behavior: smooth;
 }
+.nowrap {
+  white-space: nowrap;
+}
 header,
 footer {
-  background-color: rgba(238, 219, 12, 0.5);
+  background-color: rgba(0, 128, 128, 0.534);
   font-size: 2rem;
   margin: 0px auto;
   padding: 0.3rem;
@@ -17,6 +20,7 @@ footer {
 }
 header {
   top: 0;
+  box-shadow: 2px 5px 3px gray;
 }
 
 footer {
@@ -30,7 +34,12 @@ body {
   /* margin: 0.5rem; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  background-image: url(img/lights.webp);
+  background-image: linear-gradient(to top left, teal, whitesmoke);
+  background-image: url(img/giphy.webp);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -39,18 +48,18 @@ main {
   flex-grow: 1;
 }
 nav {
-  border: 2px solid #333;
+  /* border: 4px solid transparent; */
   border-radius: 2rem;
   margin: 2.5rem auto;
-  max-width: 90%;
-  max-height: 600px;
+  width: clamp(25vw, 50rem, 85%);
+  max-height: 60%;
   font-size: 2rem;
   line-height: 7rem;
   background-color: whitesmoke;
 }
-nav h2 {
+nav h3 {
   font-size: 42px;
-  background-color: rgba(228, 211, 23, 0.7);
+  background-color: rgb(4, 150, 150);
   border-radius: 2rem 2rem 0 0;
   padding: 0.5rem;
 }
