@@ -11,7 +11,7 @@ html {
 }
 header,
 footer {
-  background-color: rgba(0, 128, 128, 0.534);
+  background-color: rgba(5, 105, 105, 0.95);
   font-size: 2rem;
   margin: 0px auto;
   padding: 0.3rem;
@@ -20,12 +20,12 @@ footer {
 }
 header {
   top: 0;
-  box-shadow: 2px 5px 3px gray;
+  box-shadow: 2px 5px 5px gray;
 }
 
-footer {
+/* footer {
   bottom: 0;
-}
+} */
 /* .nowrap {
   white-space: nowrap;
 } */
