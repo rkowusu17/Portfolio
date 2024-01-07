@@ -222,13 +222,16 @@ abbr:hover {
 .social a:hover {
   opacity: 0.6;
 }
-
+form ul {
+  list-style-type: none;
+}
 fieldset {
   border: none;
   border-top: 1px solid #333;
 }
 legend {
   text-align: center;
+  padding: 0.5rem;
 }
 input,
 textarea {
@@ -335,6 +338,9 @@ footer a:hover {
   }
   .contact-img {
     width: 75%;
+  }
+  form ul {
+    display: flex;
   }
 
   /*

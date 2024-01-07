@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="port.css" />
+    <script src="apps.js"></script>
   </head>
   <body>
     <header>
@@ -37,7 +38,10 @@
       <nav id="links">
         <ul>
           <li>
-            <a href="Home.html">Home</a>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="portfolio.html">About Me</a>
           </li>
           <li>
             <a href="Works.html">My works</a>
@@ -101,12 +105,12 @@
             <br />
           </ul>
         </fieldset>
-        <button value="submit">Submit</button>
+        <button value="submit" onclick="regards()">Submit</button>
       </form>
     </main>
 
     <footer>
-      <p>My portfolio &copy; 2023</p>
+      <p>My portfolio &copy;<time id="year"></time></p>
       <a href="https://twitter.com/Re_ggie12" target="_blank">
         <i class="fa-brands fa-twitter"></i>
       </a>
