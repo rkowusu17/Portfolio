@@ -105,6 +105,17 @@ section {
   align-items: center;
   padding: 1rem;
 }
+.title {
+  font-weight: bold;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
 section a {
   text-decoration: none;
   color: #333;
@@ -115,10 +126,11 @@ section :hover p {
 }
 section :hover {
   transform: scale(0.9);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .about {
-  width: 99%;
+  margin: 0 auto;
+  width: 90%;
   border: 1px solid grey;
   border-radius: 15px;
   display: flex;
