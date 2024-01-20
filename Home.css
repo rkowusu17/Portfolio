@@ -35,7 +35,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-image: linear-gradient(to top left, teal, whitesmoke);
-  background-image: url(img/giphy.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -143,6 +142,9 @@ footer a:hover {
     /* align-items: flex-start; */
     display: flex;
     flex-flow: row wrap;
+  }
+  body {
+    background-image: url(img/giphy.webp);
   }
   section {
     max-width: 30%;
