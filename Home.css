@@ -19,6 +19,7 @@ footer {
   width: 100%;
 }
 header {
+  z-index: 1;
   top: 0;
   box-shadow: 2px 5px 5px gray;
 }
@@ -95,7 +96,7 @@ section {
   color: #333;
   line-height: 1.5;
   font-size: 1, 5rem;
-  max-width: 80%;
+  max-width: 90%;
   max-height: 350px;
   background-color: whitesmoke;
   border-radius: 15px;
@@ -111,6 +112,10 @@ section a {
 section :hover p {
   text-decoration: underline;
   color: rgb(54, 49, 2);
+}
+section :hover {
+  transform: scale(0.9);
+  transition: all 1s;
 }
 .about {
   width: 99%;
