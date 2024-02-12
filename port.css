@@ -9,8 +9,8 @@ html {
 }
 
 :root {
-  --normalc: rgba(5, 105, 105, 0.95);
-  --hovered: rgb(5, 105, 105);
+  --normalc: rgb(5, 105, 105);
+  --hovered: rgb(5, 105, 105, 0.8);
   --DARK: #333;
   --FS: clamp(40px, 2rem, 10px);
 }
@@ -27,7 +27,9 @@ body {
   background-color: whitesmoke;
 }
 header {
+  z-index: 1;
   background-color: var(--normalc);
+  /* background-color: var(--normalc); */
   color: var(--DARK);
   position: sticky;
   top: 0;
@@ -149,8 +151,7 @@ nav ul {
   display: none;
 }
 :is(#links a:hover, #links a:focus) {
-  background-color: whitesmoke;
-  color: var(--DARK);
+  opacity: 0.5;
 }
 /* #links a:hover{
     background-color: whitesmoke;
@@ -201,6 +202,7 @@ abbr:hover {
   cursor: pointer;
 }
 .contact-img {
+  opacity: 0.5;
   display: block;
   margin: 2rem auto;
   border-radius: 15px;
@@ -215,20 +217,25 @@ abbr:hover {
 .social a {
   color: var(--DARK);
   font-size: 2rem;
+  text-decoration: none;
 }
 .social a:hover {
-  color: blue;
+  opacity: 0.6;
 }
-
+form ul {
+  list-style-type: none;
+}
 fieldset {
   border: none;
   border-top: 1px solid #333;
 }
 legend {
   text-align: center;
+  padding: 0.5rem;
 }
 input,
 textarea {
+  border: 1px solid;
   padding: 1rem;
 }
 textarea {
@@ -241,12 +248,16 @@ button {
   border-radius: 10px;
 }
 button {
+  border: none;
   width: 100px;
-  margin-left: 50%;
+  background-color: var(--normalc);
+  margin-left: 45%;
+  color: white;
+  font-size: 1rem;
 }
 button:active {
-  border: none;
-  background-color: burlywood;
+  background-color: white;
+  color: var(--normalc);
 }
 footer {
   font-size: 30px;
@@ -324,6 +335,12 @@ footer a:hover {
     min-width: 200px;
     min-height: 200px;
     font-size: 16px;
+  }
+  .contact-img {
+    width: 75%;
+  }
+  form ul {
+    display: flex;
   }
 
   /*

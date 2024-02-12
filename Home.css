@@ -19,6 +19,7 @@ footer {
   width: 100%;
 }
 header {
+  z-index: 1;
   top: 0;
   box-shadow: 2px 5px 5px gray;
 }
@@ -34,11 +35,9 @@ body {
   /* margin: 0.5rem; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  background-image: linear-gradient(to top left, teal, whitesmoke);
-  background-image: url(img/giphy.webp);
-  background-size: 100%;
+  background-image: linear-gradient(to bottom left, teal, whitesmoke);
+  background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
   display: flex;
@@ -97,7 +96,7 @@ section {
   color: #333;
   line-height: 1.5;
   font-size: 1, 5rem;
-  max-width: 80%;
+  max-width: 90%;
   max-height: 350px;
   background-color: whitesmoke;
   border-radius: 15px;
@@ -106,6 +105,17 @@ section {
   align-items: center;
   padding: 1rem;
 }
+.title {
+  font-weight: bold;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
 section a {
   text-decoration: none;
   color: #333;
@@ -114,8 +124,13 @@ section :hover p {
   text-decoration: underline;
   color: rgb(54, 49, 2);
 }
+section :hover {
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
 .about {
-  width: 99%;
+  margin: 0 auto;
+  width: 90%;
   border: 1px solid grey;
   border-radius: 15px;
   display: flex;
@@ -140,16 +155,18 @@ footer a:hover {
 }
 
 @media screen and (min-width: 765px) {
-  main {
+  aside {
+    /* align-items: flex-start; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  }
+  body {
+    background-image: url(img/giphy.webp);
+  }
+  section {
+    max-width: 30%;
   }
   nav {
     min-width: 50%;
-  }
-  aside {
-    max-width: 40%;
   }
 }

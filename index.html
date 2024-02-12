@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/c6b3e02100.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./apps.js" defer></script>
   </head>
   <body>
     <header>Welcome to my portfolio!!</header>
@@ -38,19 +39,21 @@
         <section>
           <a href="portfolio.html">
             <div class="about">
-              Profile
-              <img
-                src="img/prpic.JPG"
-                alt="profile_pic"
-                width="200"
-                height="200"
-              />
-              <p>
-                Reginald Owusu <br />
-                A Frontend developer aspiring to be a full stack developer.
+              <span class="title">Profile</span>
+              <figure>
+                <img
+                  src="img/prpic.JPG"
+                  alt="profile_pic"
+                  width="200"
+                  height="200"
+                />
+                <figcaption>Reginald Owusu</figcaption>
+                <p>
+                  A Frontend developer aspiring to be a full stack developer.
 
-                <br />
-              </p>
+                  <br />
+                </p>
+              </figure>
             </div>
           </a>
         </section>
@@ -95,7 +98,7 @@
     </main>
 
     <footer>
-      <p>My portfolio &copy; 2023</p>
+      <p>My portfolio &copy; <time id="year"></time></p>
       <a href="https://twitter.com/Re_ggie12" target="_blank">
         <i class="fa-brands fa-twitter"></i>
       </a>
