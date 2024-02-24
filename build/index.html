@@ -11,24 +11,62 @@
     crossorigin="anonymous"
   ></script>
   <script src="apps.js" defer></script>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col gap-10">
     <header
-      class="w-full bg-teal-600 rounded-b-lg shadow-2xl flex justify-around fixed top-0"
+      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black flex justify-around fixed top-0"
     >
-      <h1 class="text-4xl p-4 text-center">
+      <h1 class="text-2xl p-4 text-center">
         <a href="#top">Welcome To My Portfolio</a>
       </h1>
       <button class="sm:hidden text-2xl">&#9776;</button>
       <nav class="gap-10 hidden text-2xl sm:flex p-6">
-        <a class="hover:opacity-40" href="#">About Me</a>
-        <a class="hover:opacity-40" href="#">Contact Me</a>
+        <a class="hover:opacity-40" href="#top">About</a>
+        <a class="hover:opacity-40" href="#">Contact</a>
         <a class="hover:opacity-40" href="#">Works</a>
         <a class="hover:opacity-40" href="mailto:reginaldmiles45@gmail.com"
           >Send a Mail</a
         >
       </nav>
     </header>
-    <main class="grow"></main>
+    <main
+      class="my-32 grow flex flex-col items-center justify-center gap-10 sm:flex-row sm:items-start sm:justify-around"
+    >
+      <section
+        id="top"
+        class="w-4/5 p-2 border-2 border-teal-200 rounded-2xl flex flex-col-reverse sm:w-2/5 sm:h-2/5 sm:flex-row sm:gap-10 sm:items-center scroll-mt-40"
+      >
+        <p class="text-">
+          I'm Reginald Kwaku Owusu, an amazing frontend developer aspiring also
+          to be a data scientist in no time. I'm poised to learn more from
+          others with higher experience and very confident that I would be a
+          great developer with time and more practice. I aspire to become a
+          fullstack devloper who would make productive changes in my work places
+          and in the tech world at large, as so. I am eager to learn all
+          programming languages and skills as soon as possible. Never the less,
+          I'm available for any Frontend internship or an entry level role...
+        </p>
+
+        <figure class="flex sm:hidden">
+          <img
+            class="mx-auto w-32 h-auto sm:nomw sm:max-w-2xl sm:h-auto sm:float-left rounded-2xl"
+            src="./img/prpic.JPG"
+            alt="profile_pic"
+          />
+          <figcaption class="m-10 sm:hidden">
+            <h2 class="font-bold">Owusu Reginald</h2>
+            Front-end developer
+          </figcaption>
+        </figure>
+        <img
+          class="hidden mx-auto w-32 h-auto sm:nomw sm:max-w-2xl sm:h-auto sm:float-right sm:block rounded-2xl"
+          src="./img/prpic.JPG"
+          alt="profile_pic"
+        />
+      </section>
+      <a href="http://">
+        <section class="sm:max-w-4xl">My Works (Projects)</section>
+      </a>
+    </main>
     <footer class="bg-teal-600 text-center text-2xl p-1">
       <h1 class="text-center text-2xl">
         My portfolio &copy; <time id="year"></time>
