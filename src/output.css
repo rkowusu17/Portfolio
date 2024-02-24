@@ -544,6 +544,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .flex {
   display: flex;
 }
@@ -558,6 +566,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .grow {
