@@ -3,5 +3,5 @@ let thisYear = new Date().getFullYear();
 year.textContent = thisYear;
 
 function regards() {
-  alert("Thanks for your response");
+  alert("Thank you");
 }
