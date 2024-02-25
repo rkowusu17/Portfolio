@@ -1,12 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.nomh {
-  height: 360px;
-}
-.nomw {
-  width: 480px;
-}
 .maxh {
-  max-height: 40vh;
+  height: 100%;
+}
+.work {
+  width: 99%;
+}
+.b-work {
+  background-image: url("/build/img/lights.webp");
+}
+.fw {
+  width: 98%;
 }
