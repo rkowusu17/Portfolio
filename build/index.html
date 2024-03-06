@@ -42,9 +42,7 @@
         >
       </nav>
     </header>
-    <main
-      class="max-w-full mt-32 grow flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:justify-around sm:flex-wrap sm:mt-24"
-    >
+    <main class="max-w-full mt-32">
       <section
         id="top"
         class="w-full dark:bg-transparent dark:text-slate-300 border border-transparent p-2 rounded-2xl sm:h-auto scroll-mt-40 shadow-xl"
@@ -86,14 +84,16 @@
           </div>
         </div>
       </section>
+    </main>
 
+    <aside class="max-w-full grid gap-4 lay md:mx-3 md:place-content-center">
       <section
-        class="w-full dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl md:w-3/12 sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
+        class="dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
       >
-        <h1 class="text-center font-bold text-2xl m-2 p-2">Contact</h1>
-        <a href="http://">
+        <a href="contacts.html">
+          <h1 class="text-center font-bold text-2xl m-2 p-2">Contact</h1>
           <div
-            class="mx-auto w-4/5 h-4/5 border border-t-slate-600 border-transparent rounded-xl flex flex-col items-center p-4"
+            class="mx-auto h-4/5 border border-t-slate-600 border-transparent rounded-xl flex flex-col items-center p-4"
           >
             <img
               class="rounded-xl mx-auto"
@@ -133,24 +133,23 @@
           </div>
         </a>
       </section>
+
       <section
-        class="w-full dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl lg:w-3/12 sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
+        class="dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
       >
-        <h1 class="p-2 m-2 text-center font-bold text-2xl rounded-r-2xl">
-          My stack
-        </h1>
-        <a href="">
+        <a href="stack.html">
+          <h1 class="p-2 m-2 text-center font-bold text-2xl rounded-r-2xl">
+            My stack
+          </h1>
           <div
-            class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-white"
+            class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-300"
           >
             <img
               src="./img/giphy.webp"
               alt="stack"
-              class="rounded w-1/3 h-auto"
+              class="rounded-xl w-2/5 h-2/5"
             />
-            <p class="text-justify">
-              Below are some programming languages I am familiar with:
-            </p>
+            <p>Below are some programming languages I am familiar with:</p>
             <ul class="list-disc sm:gap-10">
               <li>Tailwind CSS</li>
               <li>JavaScript</li>
@@ -159,13 +158,14 @@
           </div>
         </a>
       </section>
+
       <section
-        class="w-full dark:bg-transparent dark:text-slate-300 border border-transparent p-2 rounded-2xl lg:w-5/12 scroll-mt-40 shadow-xl cursor-pointer"
+        class="dark:bg-transparent dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:w-11/12"
       >
-        <h1 class="text-center font-bold text-2xl">Works</h1>
-        <a href="http://">
+        <a href="works.html">
+          <h1 class="text-center font-bold text-2xl">Works</h1>
           <div
-            class="flex flex-col items-center rounded-xl p-2 border border-transparent border-t-slate-600"
+            class="max-w-full flex flex-col items-center rounded-xl p-2 border border-transparent border-t-slate-600"
           >
             <img
               src="./img/bdrop.webp"
@@ -175,35 +175,35 @@
             They say actions speak louder than words. Have a look of some the
             works I've done:
             <div
-              class="flex flex-wrap border-2 border-slate-400 rounded-lg p-2 gap-6 sm:w-2/3"
+              class="grid grid-cols-3 gap-1 border border-slate-400 rounded-lg p-2 sm:w-full"
             >
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
-                E-commence
+                E-comms <span class="hidden">E-commerce</span>
               </div>
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
                 Cloned Websites
               </div>
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
-                Projects
+                <p>Projects</p>
               </div>
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
-                Landing Pages
+                <p>Landing Pages</p>
               </div>
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
                 Inspired works
               </div>
               <div
-                class="w-1/3 h-auto rounded-lg grid border-2 border-slate-400 hover:animate-pulse p-2 text-center"
+                class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
               >
                 Up-coming works...
               </div>
@@ -211,11 +211,11 @@
           </div>
         </a>
       </section>
-    </main>
+    </aside>
 
     <form
       action=""
-      class="p-6 bg-teal-950 text-slate-200 rounded-b-xl shadow-lg shadow-teal-950"
+      class="p-6 bg-transparent text-slate-200 rounded-b-xl shadow-lg shadow-black"
     >
       <fieldset>
         <legend class="text-center font-bold text-2xl m-2">
@@ -244,9 +244,9 @@
         </button>
       </div>
     </form>
-    <footer class="bg-teal-600 text-center text-2xl p-1">
+    <footer class="w-full bg-teal-600 text-center text-2xl p-1">
       <h1 class="text-center text-2xl">
-        My portfolio &copy; <time id="year"></time>
+        Reggie's portfolio &copy; <time id="year"></time>
       </h1>
       <div>
         <a

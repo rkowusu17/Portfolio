@@ -16,3 +16,8 @@
 .fw {
   width: 98%;
 }
+@media screen and (min-width: 760px) {
+  .lay {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+}
