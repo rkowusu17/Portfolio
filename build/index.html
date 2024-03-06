@@ -15,32 +15,48 @@
     class="bg-slate-200 dark:bg-gray-700 min-h-screen flex flex-col gap-10 sm:gap-5"
   >
     <header
-      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black flex justify-around fixed top-0 z-10"
+      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
     >
       <h1 class="text-2xl p-4 text-center font-bold">
         <a href="#top">My Portfolio</a>
       </h1>
-      <button class="sm:hidden text-2xl">&#9776;</button>
-      <section class="hidden min-h-screen min-w-full bg-slate-500">
-        <ul>
-          <a href="contacts.html">
-            <li>Contacts</li>
-          </a>
-          <a href="works.html">
-            <li>Works</li>
-          </a>
-          <a href="stack.html">
-            <li>Stack & Certificates</li>
-          </a>
+      <button id="mobile-btn" class="sm:hidden text-2xl">&#9776;</button>
+      <nav
+        id="mobile-menu"
+        class="hidden w-full absolute top-0 right-0 gap-10 flex-col text-2xl bg-slate-500 p-10"
+      >
+        <button
+          id="close-btn"
+          class="self-start absolute top-0 right-0 p-5 hover:scale-125 text-4xl"
+        >
+          &times;
+        </button>
+
+        <ul class="p-20 text-center transition-all duration-100">
+          <li class="my-10 hover:scale-125">
+            <a class="p-10 hover:opacity-40" href="#contacts">Contact</a>
+          </li>
+          <li class="my-10 hover:scale-125">
+            <a class="p-10 hover:opacity-40" href="#work">Works</a>
+          </li>
+          <li class="my-10 hover:scale-125">
+            <a class="p-10 hover:opacity-40" href="#stack"> Skills & Certs. </a>
+          </li>
+          <li class="my-10 hover:scale-125">
+            <a
+              class="p-10 hover:opacity-40"
+              href="mailto:owusureginald17@gmail.com"
+              >Send a Mail</a
+            >
+          </li>
         </ul>
-      </section>
-      <nav class="gap-10 hidden text-2xl sm:flex p-6">
+      </nav>
+      <section class="p-5 hidden sm:flex sm:gap-5 font-semibold">
         <a class="hover:opacity-40" href="contacts.html">Contact</a>
         <a class="hover:opacity-40" href="works.html">Works</a>
-        <a class="hover:opacity-40" href="mailto:reginaldmiles45@gmail.com"
-          >Send a Mail</a
-        >
-      </nav>
+        <a class="hover:opacity-40" href="stack.html"> Skills & Certs. </a>
+        <a href="mailto:owusureginald17@gmail.com"> Send a mail </a>
+      </section>
     </header>
     <main class="max-w-full mt-32">
       <section
@@ -88,6 +104,7 @@
 
     <aside class="max-w-full grid gap-4 lay md:mx-3 md:place-content-center">
       <section
+        id="contacts"
         class="dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
       >
         <a href="contacts.html">
@@ -137,6 +154,7 @@
       </section>
 
       <section
+        id="stack"
         class="dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent sm:shadow-md"
       >
         <a href="stack.html">
@@ -162,6 +180,7 @@
       </section>
 
       <section
+        id="work"
         class="dark:bg-transparent dark:text-slate-300 p-2 rounded-2xl scroll-mt-40 shadow-xl sm:w-11/12"
       >
         <a href="works.html">
