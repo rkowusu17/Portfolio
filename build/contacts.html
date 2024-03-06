@@ -4,52 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact.web</title>
+    <link rel="stylesheet" href="./css/output.css" />
     <script
       src="https://kit.fontawesome.com/c6b3e02100.js"
       crossorigin="anonymous"
     ></script>
     <script src="apps.js" defer></script>
-    <link rel="stylesheet" href="port.css" />
   </head>
-  <body>
-    <header>
-      <section class="icon">
-        <h1>My portfolio</h1>
-        <button class="menu-button">
-          <div class="menu-icon"></div>
-        </button>
-      </section>
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="portfolio.html">About Me</a>
-          </li>
-          <li>
-            <a href="Works.html">My works</a>
-          </li>
-          <li>
-            <a href="mailto:brvhreggi06@gmail.com" target="_blank">Hire Me</a>
-          </li>
-        </ul>
-      </nav>
-      <nav id="links">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="portfolio.html">About Me</a>
-          </li>
-          <li>
-            <a href="Works.html">My works</a>
-          </li>
-          <li>
-            <a href="mailto:brvhreggi06@gmail.com" target="_blank">Hire Me</a>
-          </li>
-        </ul>
+  <body
+    class="bg-transparent dark:bg-gray-700 min-h-screen flex flex-col gap-10 sm:gap-5"
+  >
+    <header
+      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black flex justify-around fixed top-0 z-10"
+    >
+      <h1 class="text-2xl p-4 text-center font-bold">
+        <a href="#top">Contacts</a>
+      </h1>
+      <button class="sm:hidden text-2xl">&#9776;</button>
+      <nav class="gap-10 hidden text-2xl sm:flex p-6">
+        <a class="hover:opacity-40" href="index.html">Home</a>
+        <a class="hover:opacity-40" href="works.html">Works</a>
+        <a class="hover:opacity-40" href="mailto:reginaldmiles45@gmail.com"
+          >Send a Mail</a
+        >
       </nav>
     </header>
     <h1 class="head">Let's connect!</h1>
