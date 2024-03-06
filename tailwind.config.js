@@ -15,7 +15,17 @@ module.exports = {
       //     },
       //   },
       // },
-      plugins: [],
+      keyframes: {
+        "show-menu": {
+          "0%": { transform: "scaleY(0)" },
+          "80%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
+        },
+      },
+      animation: {
+        "show-menu": "show-menu 1s forwards",
+      },
     },
   },
+  plugins: [],
 };
