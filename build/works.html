@@ -4,86 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Works</title>
-    <link rel="stylesheet" href="port.css" />
-    <<<<<<< HEAD
-    <script src="apps.js" defer></script>
-    =======
+    <title>Work</title>
+    <link rel="stylesheet" href="./css/output.css" />
     <script
       src="https://kit.fontawesome.com/c6b3e02100.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./apps.js" defer></script>
-    >>>>>>> 2668d33cc580007dd1f9c94cf1c9170122d56296
+    <script src="apps.js" defer></script>
   </head>
-  <body>
-    <header>
-      <section class="icon">
-        <h1>My portfolio</h1>
-        <button class="menu-button">
-          <div class="menu-icon"></div>
+  <body class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen">
+    <header
+      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
+    >
+      <h1 class="text-2xl p-4 text-center font-bold">
+        <a href="#top">My Portfolio</a>
+      </h1>
+      <button id="mobile-btn" class="sm:hidden text-4xl px-5">&#9776;</button>
+      <nav
+        aria-label="mobile-menu"
+        id="mobile-menu"
+        class="hidden w-full min-h-screen absolute top-0 right-0 gap-10 flex-col text-2xl bg-slate-500 opacity-95 p-10 origin-top-left animate-show-menu"
+      >
+        <button
+          id="close-btn"
+          class="self-start absolute top-0 right-0 p-5 hover:scale-125 text-6xl"
+        >
+          &times;
         </button>
+
+        <ul
+          class="text-4xl flex flex-col gap-10 justify-center items-center py-20 transition-all my-10"
+        >
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="index.html">Home</a>
+          </li>
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="contacts.html">Contacts</a>
+          </li>
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="stack.html"> Skills </a>
+          </li>
+          <li class="hover:scale-125">
+            <a
+              class="py-10 self-start ali hover:opacity-40"
+              href="mailto:owusureginald17@gmail.com"
+              >Mail-me
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section
+        aria-label="menu"
+        class="p-5 hidden sm:flex sm:gap-5 font-semibold"
+      >
+        <a class="hover:opacity-40" href="index.html">Home</a>
+        <a class="hover:opacity-40" href="contacts.html">Contact</a>
+        <a class="hover:opacity-40" href="stack.html"> Skills </a>
+        <a class="hover:opacity-40" href="mailto:owusureginald17@gmail.com">
+          Mail-me
+        </a>
       </section>
-      <nav id="menu">
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="portfolio.html">About Me</a>
-          </li>
-
-          <li>
-            <a href="mailto:brvhreggi06@gmail.com" target="_blank">Hire Me</a>
-          </li>
-          <li>
-            <a href="Contacts.html">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav id="links">
-        <ul>
-          <li>
-            <a href="Home.html">Home</a>
-          </li>
-          <li>
-            <a href="mailto:brvhreggi06@gmail.com" target="_blank">Hire Me</a>
-          </li>
-          <li>
-            <a href="Contacts.html" target="_blank">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main>
-      <div>
-        They say actions speak louder than words, so why don't you check up some
-        of my amazing projects below. I hope you like them:
 
-        <a href="https://acme-rocket-59sl.onrender.com">Acme-Rocket</a>
-      </div>
+    <main class="max-w-full grow flex flex-col gap-10 mt-32">
+      <p class="p-6 md:p-10 text-3xl">
+        Through my journey as a Web - App developer, I made some projects alomg
+        the way. Most of which was self-inspired whiles others were inspired and
+        guided by Youtbubers. Have a look at some of them:
+      </p>
+      <section class="flex flex-col md:flex-row md:justify-around">
+        <section id="container" class="minw md:w-2/5">
+          <section
+            aria-label="works"
+            class="p-2 mt-6 w-full grid grid-cols-4 grid-rows-1 gap-1"
+          >
+            <div
+              class="grid place-items-center border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="https://acme-rocket-59sl.onrender.com" target="_blank">
+                Acme-Rocket
+              </a>
+            </div>
+            <div
+              class="grid place-items-center border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank">Tech Junkie</a>
+            </div>
+            <div
+              class="grid place-items-center border border-slate-600 p-2 rounded-sm text-center"
+            >
+              <a href="#" target="_blank">E-commerce</a>
+            </div>
+            <div
+              class="grid place-items-center border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank">Up-coming project</a>
+            </div>
+          </section>
+          <section class="p-2">
+            <img class="border rounded" src="./img/set.jpg" alt="set-up" />
+          </section>
+        </section>
+
+        <section id="container" class="my-4 minw md:w-2/5">
+          <h3
+            class="w-5/6 bg-slate-600 text-center text-white p-4 sm:w-3/4 mx-auto md:w-full"
+          >
+            Cloned-Websites
+          </h3>
+          <section class="p-4">
+            <img
+              class="border rounded my-6"
+              src="./img/dev.jpg"
+              alt="dev-image"
+            />
+          </section>
+          <section
+            aria-label="works"
+            class="p-2 my-4 6w-full grid grid-cols-4 grid-rows-3 gap-1"
+          >
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank">Facebook</a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+            <div
+              class="border border-slate-600 p-2 rounded-sm text-center cursor-pointer"
+            >
+              <a href="#" target="_blank"></a>
+            </div>
+          </section>
+        </section>
+      </section>
     </main>
 
-    <footer>
-      <<<<<<< HEAD
-      <p>My portfolio &copy; <span id="year"></span></p>
-      =======
-      <p>My portfolio &copy; <time id="year"></time></p>
-      >>>>>>> 2668d33cc580007dd1f9c94cf1c9170122d56296
-      <a href="https://twitter.com/Re_ggie12" target="_blank">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
-        target="_blank"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/rkowusu17" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <br />
+    <footer class="w-full bg-teal-600 text-center text-2xl p-1">
+      <h1 class="text-center text-2xl">
+        Reggie's portfolio &copy; <time id="year"></time>
+      </h1>
+      <div>
+        <a
+          href="https://twitter.com/Re_ggie12"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/rkowusu17"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

@@ -18,12 +18,12 @@ module.exports = {
       keyframes: {
         "show-menu": {
           "0%": { transform: "scaleY(0)" },
-          "80%": { transform: "scaleY(1.15)" },
+          "80%": { transform: "scaleY(1.05)" },
           "100%": { transform: "scaleY(1)" },
         },
       },
       animation: {
-        "show-menu": "show-menu 1s forwards",
+        "show-menu": "show-menu 0.7s ease-in forwards",
       },
     },
   },

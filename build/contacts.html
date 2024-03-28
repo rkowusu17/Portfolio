@@ -11,26 +11,62 @@
     ></script>
     <script src="apps.js" defer></script>
   </head>
-  <body
-    class="bg-transparent dark:bg-gray-700 min-h-screen flex flex-col gap-10 sm:gap-5"
-  >
+  <body class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen">
     <header
-      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black flex justify-around fixed top-0 z-10"
+      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
     >
       <h1 class="text-2xl p-4 text-center font-bold">
-        <a href="#top">Contacts</a>
+        <a href="#top">My Portfolio</a>
       </h1>
-      <button class="sm:hidden text-2xl">&#9776;</button>
-      <nav class="gap-10 hidden text-2xl sm:flex p-6">
+      <button id="mobile-btn" class="sm:hidden text-4xl px-5">&#9776;</button>
+      <nav
+        aria-label="mobile-menu"
+        id="mobile-menu"
+        class="hidden w-full min-h-screen absolute top-0 right-0 gap-10 flex-col text-2xl bg-slate-500 opacity-95 p-10 origin-top-left animate-show-menu"
+      >
+        <button
+          id="close-btn"
+          class="self-start absolute top-0 right-0 p-5 hover:scale-125 text-6xl"
+        >
+          &times;
+        </button>
+
+        <ul
+          class="text-4xl flex flex-col gap-10 justify-center items-center py-20 transition-all my-10"
+        >
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="index.html">Home</a>
+          </li>
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="works.html">Works</a>
+          </li>
+          <li class="hover:scale-125">
+            <a class="py-10 hover:opacity-40" href="#stack"> Skills </a>
+          </li>
+          <li class="hover:scale-125">
+            <a
+              class="py-10 self-start ali hover:opacity-40"
+              href="mailto:owusureginald17@gmail.com"
+              >Mail-me
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section
+        aria-label="menu"
+        class="p-5 hidden sm:flex sm:gap-5 font-semibold"
+      >
         <a class="hover:opacity-40" href="index.html">Home</a>
         <a class="hover:opacity-40" href="works.html">Works</a>
-        <a class="hover:opacity-40" href="mailto:reginaldmiles45@gmail.com"
-          >Send a Mail</a
-        >
-      </nav>
+        <a class="hover:opacity-40" href="stack.html"> Skills </a>
+        <a class="hover:opacity-40" href="mailto:owusureginald17@gmail.com">
+          Mail-me
+        </a>
+      </section>
     </header>
     <h1 class="head">Let's connect!</h1>
-    <main>
+    <main class="max-w-full mt-32 grow flex flex-col gap-10 md:gap-5">
       <img
         class="contact-img"
         src="img/200w (6).webp"
@@ -86,22 +122,33 @@
       </form>
     </main>
 
-    <footer>
-      <p>My portfolio &copy;<span id="year"></span></p>
-
-      <a href="https://twitter.com/Re_ggie12" target="_blank">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
-        target="_blank"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/rkowusu17" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <br />
+    <footer class="w-full bg-teal-600 text-center text-2xl p-1">
+      <h1 class="text-center text-2xl">
+        Reggie's portfolio &copy; <time id="year"></time>
+      </h1>
+      <div>
+        <a
+          href="https://twitter.com/Re_ggie12"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/rkowusu17"
+          class="hover:text-white"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

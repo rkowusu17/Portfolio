@@ -13,6 +13,9 @@
 .b-work {
   background-image: url("/build/img/lights.webp");
 }
+.minw {
+  min-width: 40%;
+}
 .fw {
   width: 98%;
 }
