@@ -11,6 +11,7 @@
     ></script>
     <script src="apps.js" defer></script>
   </head>
+
   <body class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen">
     <header
       class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
@@ -65,19 +66,22 @@
         </a>
       </section>
     </header>
-    <h1 class="head">Let's connect!</h1>
-    <main class="max-w-full mt-32 grow flex flex-col gap-10 md:gap-5">
+
+    <main class="max-w-full mt-32 grow flex flex-col gap-10 md:gap-5 my-5">
+      <h1 class="text-3xl text-center">Let's connect!</h1>
       <img
-        class="contact-img"
+        class="mx-auto border rounded"
         src="img/200w (6).webp"
         alt="Networking photo"
         title="let's connect"
         width="300"
         height="300"
       />
-      <section class="social">
-        <p>
+      <section class="bg-slate-500 p-4 text-xl">
+        <p class="text-2xl text-center">
           You can reach out to me via my social media handles:
+        </p>
+        <div>
           <br />
           <a href="https://twitter.com/Re_ggie12" target="_blank">
             <i class="fa-brands fa-twitter"></i>
@@ -91,16 +95,16 @@
           <a href="https://github.com/rkowusu17" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
-        </p>
 
-        <br />
-        <p class="telephone">
-          or Contact me on :
           <br />
-          <a href="tel:+233202324273"> +233 202324273</a>
-        </p>
+          <p class="telephone">
+            or Contact me on :
+            <br />
+            <a href="tel:+233202324273"> +233 202324273</a>
+          </p>
+        </div>
       </section>
-      <form>
+      <!-- <form>
         <fieldset>
           <legend>Send a message</legend>
           <ul>
@@ -119,7 +123,7 @@
           </ul>
         </fieldset>
         <button value="submit" onclick="regards()">Submit</button>
-      </form>
+      </form> -->
     </main>
 
     <footer class="w-full bg-teal-600 text-center text-2xl p-1">

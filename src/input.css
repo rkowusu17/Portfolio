@@ -4,6 +4,9 @@
 .maxh {
   height: 100%;
 }
+.minh-main {
+  min-height: 60%;
+}
 /* .body {
   background-image: url("/build/img/giphy.webp");
 } */
