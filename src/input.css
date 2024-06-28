@@ -28,6 +28,10 @@
   }
 }
 
+.hovColor:hover {
+  color: #95e3ca;
+}
+
 /* #mobile-btn:active > #mobile-menu {
   display: block;
 } */

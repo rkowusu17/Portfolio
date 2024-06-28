@@ -1092,6 +1092,10 @@ video {
   }
 }
 
+.hovColor:hover {
+  color: #95e3ca;
+}
+
 /* #mobile-btn:active > #mobile-menu {
   display: block;
 } */
@@ -1115,6 +1119,11 @@ video {
 .hover\:bg-teal-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-teal-500:hover {
@@ -1298,5 +1307,10 @@ video {
   .dark\:text-slate-300 {
     --tw-text-opacity: 1;
     color: rgb(203 213 225 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
