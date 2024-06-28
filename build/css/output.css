@@ -741,7 +741,7 @@ video {
 }
 
 .animate-show-menu {
-  animation: show-menu 0.7s ease-in forwards;
+  animation: show-menu 0.8s ease-in-out forwards;
 }
 
 .cursor-pointer {
@@ -1119,11 +1119,6 @@ video {
 .hover\:bg-teal-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
-}
-
-.hover\:text-black:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-teal-500:hover {

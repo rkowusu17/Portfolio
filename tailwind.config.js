@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       animation: {
-        "show-menu": "show-menu 0.7s ease-in forwards",
+        "show-menu": "show-menu 0.8s ease-in-out forwards",
       },
     },
   },
