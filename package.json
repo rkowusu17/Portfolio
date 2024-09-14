@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "browserslist": "^4.23.3",
+    "caniuse-lite": "^1.0.30001660",
     "tailwindcss": "^3.4.1"
   }
 }

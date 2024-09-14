@@ -22,16 +22,40 @@
 .fw {
   width: 98%;
 }
+
+.maxw {
+  width: 96%;
+}
+
+.bb {
+  border: 2px solid #333;
+}
+
+.secheight {
+  height: 500px;
+}
+.sleekbackground {
+  background-color: rgba(107, 108, 102, 0.9);
+}
+
 @media screen and (min-width: 960px) {
   .lay {
+    margin: 0 10px;
     grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .but {
+    width: 60px;
   }
 }
 
 .hovColor:hover {
   color: #95e3ca;
 }
-
+/* .scale:hover {
+} */
 /* #mobile-btn:active > #mobile-menu {
   display: block;
 } */

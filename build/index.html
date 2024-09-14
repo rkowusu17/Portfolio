@@ -12,7 +12,10 @@
     <script src="apps.js" defer></script>
   </head>
 
-  <body class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen">
+  <body
+    style="background: linear-gradient(to bottom, white, rgb(110, 164, 164))"
+    class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen"
+  >
     <header
       class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
     >
@@ -62,26 +65,28 @@
         </a>
       </section>
     </header>
-    <main class="max-w-full mt-32 grow flex flex-col gap-10 md:gap-5">
+    <main class="mt-32 grow flex flex-col gap-10 md:gap-5">
       <section
         id="top"
-        class="w-full dark:bg-transparent dark:text-slate-300 border border-transparent p-2 rounded-2xl sm:h-auto scroll-mt-40"
+        style="background-color: rgba(91, 143, 142, 0.304)"
+        class="w-full dark:bg-transparent dark:text-slate-300 border border-transparent p-2 rounded-2xl scroll-mt-40"
       >
         <h1 class="text-center font-bold text-2xl">About - Me</h1>
 
         <div
           class="flex flex-col-reverse gap-2 sm:flex-row sm:gap-2 sm:items-center border border-slate-600 sm:border-none rounded-xl p-2"
         >
-          <p class="sm:text-2xl font-semibold sm:p-6">
-            I'm Reginald Kwaku Owusu, an amazing frontend developer aspiring
-            also to be a data scientist. I'm eager to learn more from others
-            with higher experience and very confident that I would be a great
-            developer with time and more practice. I aspire to become a
-            fullstack developer who would make productive changes in my place of
-            work and in the tech world at large. I am willing to learn related
+          <p class="text-4xl font-semibold sm:text-2xl sm:p-6">
+            I'm Reginald Kwaku Owusu, an amazing frontend developer aspiring to
+            be a data scientist and also have the passion for Machine learning.
+            I'm eager to learn more by working with other experienced and great
+            developers to make my dream of becoming a great developer with time
+            and more practice come true. I aspire to become a fullstack
+            developer who would make productive changes in my place of work and
+            in the tech world at large. I am willing to learn related
             programming languages, skills and gain more experience inorder to
-            achieve such aims. However, I'm available for any Frontend
-            internship or an entry level role.
+            achieve goals. However, I'm available for any Frontend internship or
+            an entry level role.
           </p>
           <figure class="flex sm:hidden rounded-2xl">
             <img
@@ -89,7 +94,7 @@
               src="./img/profileU.jpg"
               alt="profile_pic"
             />
-            <figcaption class="m-10 sm:hidden rounded-2xl">
+            <figcaption class="m-10 rounded-2xl">
               <h2 class="font-bold">Owusu Reginald</h2>
               Front-end developer
             </figcaption>
@@ -108,15 +113,16 @@
 
       <hr class="w-3/5 h-1 bg-slate-700 mx-auto" />
 
-      <aside class="max-w-full grid gap-4 lay md:mx-3 md:place-content-center">
+      <aside class="p-2 grid place-content-center gap-4 sm:gap-2 lay md:mx-2">
         <section
           id="contacts"
-          class="dark:text-slate-300 p-2 rounded-2xl scroll-m-40 sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent"
+          style="border: 1px solid black; width: 2/3; height: 450px"
+          class="rounded-2xl scroll-m-40 cursor-pointer sm:text-lg dark:bg-transparent dark:text-slate-300 md:border-2 md:border-slate-700"
         >
           <a href="contacts.html">
-            <h1 class="text-center font-bold text-2xl m-2 p-2">Contacts</h1>
+            <h1 class="text-center font-bold text-2xl m-2">Contacts</h1>
             <div
-              class="mx-auto h-4/5 border border-t-slate-600 border-transparent rounded-xl flex flex-col items-center p-4 md:border-2 md:border-slate-700 md:minh-main"
+              class="mx-auto h-4/5 border border-t-slate-600 border-transparent rounded-xl flex flex-col items-center p-4 md:minh-main"
             >
               <img
                 class="rounded mx-auto"
@@ -163,20 +169,21 @@
 
         <section
           id="stack"
-          class="dark:text-slate-300 p-2 rounded-2xl scroll-m-40 sm:h-auto cursor-pointer sm:text-lg dark:bg-transparent"
+          style="border: 1px solid black; width: 2/3; height: 450px"
+          class="p-2 rounded-2xl scroll-m-40 cursor-pointer sm:text-lg dark:bg-transparent dark:text-slate-300 md:border-2 md:border-slate-700"
         >
           <a href="stack.html">
-            <h1 class="p-2 m-2 text-center font-bold text-2xl rounded-r-2xl">
+            <h1 class="m-2 text-center font-bold text-2xl rounded-r-2xl">
               My stack
             </h1>
             <div
-              class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-300 md:border-2 md:border-slate-700 md:min-h-80"
+              class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-300"
             >
               <img
                 src="./img/giphy.webp"
                 alt="stack"
                 class="rounded"
-                height="200"
+                height="150"
                 width="200"
               />
               <p>Below are some programming languages I am familiar with:</p>
@@ -184,6 +191,7 @@
                 <li>Tailwind CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
+                <li>C#</li>
               </ul>
             </div>
           </a>
@@ -191,12 +199,13 @@
 
         <section
           id="work"
-          class="dark:bg-transparent dark:text-slate-300 p-2 rounded-2xl scroll-m-40 sm:w-11/12"
+          style="border: 1px solid black; width: 2/3; height: 450px"
+          class="p-2 rounded-2xl scroll-m-40 cursor-pointer sm:text-lg dark:bg-transparent dark:text-slate-300 md:border-2 md:border-slate-700"
         >
           <a href="works.html">
             <h1 class="text-center font-bold text-2xl m-2">Works</h1>
             <div
-              class="max-w-full flex flex-col items-center rounded-xl p-2 border border-transparent border-t-slate-600 md:border-2 md:border-slate-700 md:min-h-80"
+              class="max-w-full flex flex-col items-center rounded-xl p-2 border border-transparent border-t-slate-600"
             >
               <img
                 src="./img/bdrop.webp"
@@ -247,7 +256,15 @@
       </aside>
       <hr class="w-3/5 h-1 bg-slate-700 mx-auto" />
 
-      <form action="" class="p-10 bg-slate-600 shadow-black">
+      <form
+        action=""
+        style="
+          background-color: rgba(40, 82, 81, 0.104);
+          border-radius: 15px;
+          margin: 10px;
+        "
+        class="shadow-black"
+      >
         <fieldset class="p-10">
           <legend class="text-center text-black font-bold text-2xl mb-2">
             Any Comment??
@@ -265,26 +282,31 @@
           <br />
           <textarea
             id="Comment"
-            rows="10"
-            class="p-2 text-black rounded-lg resize-none active:outline-none fw"
+            rows="5"
+            cols="20"
+            class="p-4 text-black rounded-lg resize-none active:outline-none fw"
           ></textarea>
+          <div
+            class="text-black font-semibold flex sm:items-center justify-around gap-12 mt-5 flex-col"
+          >
+            <button
+              id="submitbtn"
+              style="padding: 10px 20px"
+              class="w-3/5 text-xl rounded-xl bg-slate-300 md:w-3/5 hover:bg-teal-900 md:text-2xl"
+              value="Submit"
+            >
+              Submit
+            </button>
+            <button
+              id="resetbtn"
+              style="padding: 10px 20px"
+              class="w-3/5 but text-xl rounded-xl bg-slate-300 hover:bg-teal-900"
+              value="Reset"
+            >
+              Reset
+            </button>
+          </div>
         </fieldset>
-        <div
-          class="text-black font-semibold flex justify-around items-center gap-12 mt-5"
-        >
-          <button
-            class="text-xl rounded-xl p-4 bg-slate-300 hover:bg-teal-900"
-            value="Submit"
-          >
-            Submit
-          </button>
-          <button
-            class="text-xl rounded-xl p-4 bg-slate-300 hover:bg-teal-900"
-            value="Reset"
-          >
-            Reset
-          </button>
-        </div>
       </form>
     </main>
 
