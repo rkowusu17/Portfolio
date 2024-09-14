@@ -68,7 +68,7 @@
     <main class="mt-32 grow flex flex-col gap-10 md:gap-5">
       <section
         id="top"
-        style="background-color: rgba(91, 143, 142, 0.304)"
+        style="background-color: rgba(142, 154, 154, 0.173)"
         class="w-full dark:bg-transparent dark:text-slate-300 border border-transparent p-2 rounded-2xl scroll-mt-40"
       >
         <h1 class="text-center font-bold text-2xl">About - Me</h1>
@@ -76,7 +76,7 @@
         <div
           class="flex flex-col-reverse gap-2 sm:flex-row sm:gap-2 sm:items-center border border-slate-600 sm:border-none rounded-xl p-2"
         >
-          <p class="text-xl font-semibold sm:text-lg sm:p-6">
+          <p class="text-lg font-semibold md:text-2xl sm:p-6">
             I'm Reginald Kwaku Owusu, an amazing frontend developer aspiring to
             be a data scientist and also have the passion for Machine learning.
             I'm eager to learn more by working with other experienced and great
@@ -132,37 +132,38 @@
                 width="200"
               />
               <p>let's connect via the following means:</p>
-
-              <a
-                class="flex gap-2 hover:text-teal-500"
-                href="https://twitter.com/Re_ggie12"
-                target="_blank"
-              >
-                <i class="p-2 fa-brands fa-twitter"></i>
-                <h3>Re_ggie12</h3>
-              </a>
-              <a
-                class="flex gap-2 hover:text-teal-500"
-                href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
-                target="_blank"
-              >
-                <i class="p-2 fa-brands fa-linkedin"></i>
-                <h3>Reginald Owusu Kwaku</h3>
-              </a>
-              <a
-                class="flex gap-2 hover:text-teal-500"
-                href="https://github.com/rkowusu17"
-                target="_blank"
-              >
-                <i class="p-2 fa-brands fa-github"> </i>
-                <h3>rkowusu17</h3>
-              </a>
-              <a
-                class="flex hover:text-teal-500"
-                href="mailto:owusureginald17@gmail.com"
-                ><i class="p-2 fa-regular fa-envelope"></i>
-                <h3>owusureginald17@gmail.com</h3></a
-              >
+              <div class="mt-10">
+                <a
+                  class="flex gap-2 hover:text-teal-500"
+                  href="https://twitter.com/Re_ggie12"
+                  target="_blank"
+                >
+                  <i class="p-2 fa-brands fa-twitter"></i>
+                  <h3>Re_ggie12</h3>
+                </a>
+                <a
+                  class="flex gap-2 hover:text-teal-500"
+                  href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
+                  target="_blank"
+                >
+                  <i class="p-2 fa-brands fa-linkedin"></i>
+                  <h3>Reginald Owusu Kwaku</h3>
+                </a>
+                <a
+                  class="flex gap-2 hover:text-teal-500"
+                  href="https://github.com/rkowusu17"
+                  target="_blank"
+                >
+                  <i class="p-2 fa-brands fa-github"> </i>
+                  <h3>rkowusu17</h3>
+                </a>
+                <a
+                  class="flex hover:text-teal-500"
+                  href="mailto:owusureginald17@gmail.com"
+                  ><i class="p-2 fa-regular fa-envelope"></i>
+                  <h3>owusureginald17@gmail.com</h3></a
+                >
+              </div>
             </div>
           </a>
         </section>
@@ -187,7 +188,7 @@
                 width="200"
               />
               <p>Below are some programming languages I am familiar with:</p>
-              <ul class="list-disc sm:gap-10">
+              <ul class="mt-10 list-disc sm:gap-10">
                 <li>Tailwind CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -217,7 +218,7 @@
               They say actions speak louder than words. Have a look of some the
               works I've done:
               <div
-                class="mt-10 grid grid-cols-3 gap-1 border border-slate-400 rounded-lg p-2 sm:w-full md:self-end"
+                class="mt-5 grid grid-cols-3 gap-1 border border-slate-400 rounded-lg p-2 sm:w-full md:self-end"
               >
                 <div
                   class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
@@ -301,7 +302,7 @@
             <button
               id="resetbtn"
               style="padding: 10px 20px"
-              class="w-3/5 but text-xl rounded-xl bg-slate-600 hover:bg-teal-900"
+              class="w-3/5 text-xl rounded-xl bg-slate-600 hover:bg-teal-900"
               value="Reset"
             >
               Reset
@@ -309,6 +310,33 @@
           </div>
         </fieldset>
       </form>
+      <script>
+        const comment = document.getElementById("Comment");
+        const email = document.getElementById("e-mail");
+        const submitBtn = document.getElementById("submitbtn");
+        const resetBtn = document.getElementById("resetbtn");
+        submitBtn.addEventListener("click", () => {
+          let mail = email.value;
+          let text = comment.value;
+          if (mail.length > 0) {
+            if (text.length <= 1) {
+              alert("Kindly leave a comment ");
+            } else {
+              alert("Thank you for your comment");
+            }
+            console.log(mail);
+            console.log(text.length);
+          }
+          setTimeout(clear(), 5000);
+        });
+
+        resetBtn.addEventListener("click", clear());
+
+        function clear() {
+          email.value = " ";
+          comment.value = " ";
+        }
+      </script>
     </main>
 
     <footer class="w-full bg-teal-600 text-center text-2xl p-1">
