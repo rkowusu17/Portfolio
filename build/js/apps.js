@@ -10,9 +10,9 @@ year.textContent = thisYear;
 // function regards() {
 //   alert("Thank you");
 // }
-let mobileBtn = document.getElementById("mobile-btn");
-let closeBtn = document.getElementById("close-btn");
-let mobileMenu = document.getElementById("mobile-menu");
+// let mobileBtn = document.getElementById("mobile-btn");
+// let closeBtn = document.getElementById("close-btn");
+// let mobileMenu = document.getElementById("mobile-menu");
 
 const initApp = () => {
   const hamburgerBtn = document.getElementById("mobile-btn");
