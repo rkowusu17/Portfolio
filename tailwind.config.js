@@ -15,6 +15,9 @@ module.exports = {
       //     },
       //   },
       // },
+      screens: {
+        large: { raw: "screen and (min-width : '750px') " },
+      },
       keyframes: {
         "show-menu": {
           "0%": { transform: "scaleY(0)" },
