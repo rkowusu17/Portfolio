@@ -267,29 +267,42 @@
         "
         class="shadow-black"
       >
-        <fieldset class="grid place-content-center m-5">
+        <fieldset class="flex flex-col gap-5 justify-center items-center m-5">
           <legend class="text-center text-black font-bold text-2xl mb-2">
             Any Comment??
           </legend>
-          <label class="text-slate-200 text-3xl" for="e-mail">E-mail:</label>
-          <input
-            type="email"
-            name=""
-            id="e-mail"
-            class="rounded-lg p-2 text-black w-4/5 sm:w-96"
-          />
-          <br />
-          <br />
-          <label class="text-slate-200 text-3xl" for="Comment">Comment:</label>
-          <br />
-          <textarea
-            id="Comment"
-            rows="5"
-            cols="20"
-            class="w-4/5 sm:w-96 p-4 text-black rounded-lg resize-none active:outline-none fw"
-          ></textarea>
+          <div class="flex flex-col gap-5 md:flex-row md:gap-12">
+            <div>
+              <label class="text-slate-200 text-3xl" for="e-mail"
+                >E-mail:</label
+              >
+              <br />
+              <input
+                style="width: 500px"
+                type="email"
+                name=""
+                id="e-mail"
+                class="rounded-lg p-2 text-black w-4/5"
+              />
+            </div>
+            <br />
+            <br />
+            <div>
+              <label class="text-slate-200 text-3xl" for="Comment"
+                >Comment:</label
+              >
+              <br />
+              <textarea
+                style="width: 500px"
+                id="Comment"
+                rows="5"
+                cols="20"
+                class="w-4/5 p-4 text-black rounded-lg resize-none active:outline-none"
+              ></textarea>
+            </div>
+          </div>
           <div
-            class="text-black font-semibold flex items-center justify-center gap-12 mt-5 flex-col"
+            class="text-black font-semibold flex items-center justify-center gap-12 mt-5 flex-col md:flex-row"
           >
             <button
               id="submitbtn"
