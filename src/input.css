@@ -26,6 +26,9 @@
 .maxw {
   width: 96%;
 }
+.butwidth {
+  width: 250px;
+}
 
 .bb {
   border: 2px solid #333;
