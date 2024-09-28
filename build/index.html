@@ -14,7 +14,7 @@
 
   <body
     style="background: linear-gradient(to bottom, white, rgb(110, 164, 164))"
-    class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen"
+    class="bg-slate-200 dark:bg-gray-700 flex flex-col min-h-screen justify-center items-center"
   >
     <header
       class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
@@ -65,7 +65,7 @@
         </a>
       </section>
     </header>
-    <main class="mt-32 grow flex flex-col gap-10 md:gap-5">
+    <main class="w-full mt-32 grow flex flex-col gap-10 md:gap-5">
       <section
         id="top"
         style="background-color: rgba(142, 154, 154, 0.173)"
@@ -188,7 +188,7 @@
                 width="200"
               />
               <p>Below are some programming languages I am familiar with:</p>
-              <ul class="mt-10 list-disc sm:gap-10">
+              <ul class="list-disc my-5 md:my-2">
                 <li>Tailwind CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -271,33 +271,31 @@
           <legend class="text-center text-black font-bold text-2xl mb-2">
             Any Comment??
           </legend>
-          <div class="flex flex-col gap-5 md:flex-row md:gap-12">
+          <div class="flex flex-col gap-5 lg:flex-row md:gap-12">
             <div>
               <label class="text-slate-200 text-3xl" for="e-mail"
                 >E-mail:</label
               >
               <br />
               <input
-                style="width: 500px"
                 type="email"
                 name=""
                 id="e-mail"
-                class="rounded-lg p-2 text-black w-4/5"
+                class="w-96 rounded-lg p-5 text-black"
               />
             </div>
             <br />
             <br />
-            <div>
+            <div class="w-full">
               <label class="text-slate-200 text-3xl" for="Comment"
                 >Comment:</label
               >
               <br />
               <textarea
-                style="width: 500px"
                 id="Comment"
                 rows="5"
                 cols="20"
-                class="w-4/5 p-4 text-black rounded-lg resize-none active:outline-none"
+                class="w-96 p-10 text-black rounded-lg resize-none active:outline-none"
               ></textarea>
             </div>
           </div>
@@ -307,7 +305,7 @@
             <button
               id="submitbtn"
               style="padding: 10px 20px"
-              class="w-3/5 text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
+              class="text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
               value="Submit"
             >
               Submit
@@ -315,7 +313,7 @@
             <button
               id="resetbtn"
               style="padding: 10px 20px"
-              class="w-3/5 text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
+              class="text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
               value="Reset"
             >
               Reset
