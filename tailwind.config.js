@@ -18,6 +18,12 @@ module.exports = {
       screens: {
         large: { raw: "screen and (min-width : '750px') " },
       },
+      width: {
+        95: " 95% ",
+        70: "70%",
+        75: "75%",
+        88: "88%",
+      },
       keyframes: {
         "show-menu": {
           "0%": { transform: "scaleY(0)" },
