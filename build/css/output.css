@@ -1396,8 +1396,8 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-9\/12 {
-    width: 75%;
+  .lg\:w-2\/6 {
+    width: 33.333333%;
   }
 
   .lg\:w-88 {
@@ -1406,26 +1406,6 @@ video {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-70 {
-    width: 70%;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .lg\:w-3\/6 {
-    width: 50%;
-  }
-
-  .lg\:w-2\/6 {
-    width: 33.333333%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 }
 
