@@ -660,10 +660,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .flex {
   display: flex;
 }
@@ -724,16 +720,16 @@ video {
   width: 80%;
 }
 
-.w-5\/6 {
-  width: 83.333333%;
-}
-
 .w-70 {
   width: 70%;
 }
 
 .w-75 {
   width: 75%;
+}
+
+.w-88 {
+  width: 88%;
 }
 
 .w-95 {
@@ -870,12 +866,8 @@ video {
   align-self: flex-start;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overscroll-x-contain {
-  overscroll-behavior-x: contain;
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .scroll-smooth {
@@ -984,6 +976,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .p-3 {
@@ -1336,36 +1332,24 @@ video {
     width: 60%;
   }
 
-  .md\:w-4\/5 {
-    width: 80%;
-  }
-
   .md\:w-60 {
     width: 15rem;
   }
 
-  .md\:w-96 {
-    width: 24rem;
+  .md\:w-95 {
+    width:  95% ;
   }
 
-  .md\:w-full {
-    width: 100%;
+  .md\:max-w-4xl {
+    max-width: 56rem;
   }
 
-  .md\:min-w-96 {
-    min-width: 24rem;
+  .md\:flex-none {
+    flex: none;
   }
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
   }
 
   .md\:gap-5 {
