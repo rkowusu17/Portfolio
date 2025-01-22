@@ -13,8 +13,7 @@
   </head>
 
   <body
-    style="background: linear-gradient(to bottom, white, rgb(110, 164, 164))"
-    class="bg-slate-200 dark:bg-slate-950 dark:text-slate-100 flex flex-col min-h-screen justify-center items-center"
+    class="bg-gradient-to-b from-white to-custom-end dark:text-slate-800 flex flex-col min-h-screen justify-center items-center"
   >
     <header
       class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
@@ -70,7 +69,7 @@
     >
       <section
         id="top"
-        class="bg-gray-400 w-95 dark:bg-transparent dark:bg-green-900 dark:text-slate-100 border p-2 rounded-2xl scroll-mt-40"
+        class="bg-custom-bg w-95 dark:bg-transparent dark:text-slate-800 border p-2 rounded-2xl scroll-mt-40"
       >
         <h1 class="text-center font-bold text-2xl">About - Me</h1>
 
@@ -179,7 +178,7 @@
               My stack
             </h1>
             <div
-              class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-800"
+              class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-900"
             >
               <img
                 src="./img/giphy.webp"
@@ -261,7 +260,7 @@
       <form
         action=""
         style="
-          background-color: rgba(40, 82, 81, 0.104);
+          background-color: rgba(80, 112, 111, 0.098);
           border-radius: 15px;
           margin: 10px;
           padding: 20px;
@@ -269,7 +268,9 @@
         class="shadow-black w-95"
       >
         <fieldset class="w-full flex flex-col justify-center items-center m-5">
-          <legend class="text-center text-black font-bold text-2xl mb-2">
+          <legend
+            class="text-center text-black dark:text-slate-400 font-bold text-2xl mb-2"
+          >
             Any Comment??
           </legend>
           <div class="w-full flex flex-col md:gap-5">
@@ -306,7 +307,7 @@
             <button
               id="submitbtn"
               style="padding: 10px 20px"
-              class="text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
+              class="text-xl rounded-xl bg-slate-600 dark:bg-transparent hover:bg-teal-900 sm:w-60 md:text-2xl"
               value="Submit"
             >
               Submit
@@ -314,7 +315,7 @@
             <button
               id="resetbtn"
               style="padding: 10px 20px"
-              class="text-xl rounded-xl bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
+              class="text-xl rounded-xl dark:bg-transparent bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
               value="Reset"
             >
               Reset

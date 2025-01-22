@@ -15,6 +15,12 @@ module.exports = {
       //     },
       //   },
       // },
+      gradientColorStops: {
+        "custom-end": "rgb(110, 164, 164)",
+      },
+      colors: {
+        "custom-bg": "rgba(142, 154, 154, 0.173)",
+      },
       screens: {
         large: { raw: "screen and (min-width : '750px') " },
       },
