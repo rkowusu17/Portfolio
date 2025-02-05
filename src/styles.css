@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --header-Font: "Playfair", serif;
+  --header-color: #c3bef7;
+  --header-FS: 1.7rem;
+  --background: #e5ecf4;
+  --white-color: #ffffff;
+  --normal-FS: 1.7rem;
+  --body-Font: "Poppins", serif;
+  --header-w: 700;
+  --primary-black: black;
+  --second-black: #333;
+  --border-col: #effffa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-flow: column wrap;
+  gap: 4rem;
+  background-color: var(--background);
+}
+
+header {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--header-Font);
+  font-size: var(--header-FS);
+  color: var(--primary-black);
+  font-weight: var(--header-w);
+}
+.desktop-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  transition: all 5s;
+}
+.desktop-links a {
+  text-decoration: none;
+  color: var(--primary-black);
+}
+.desktop-links a:hover {
+  border-bottom: 3px solid var(--border-col);
+}
+.moble-view {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2rem;
+  font-size: var(--normal-FS);
+  font-family: var(--body-Font);
+  gap: 5rem;
+}
+.about-me {
+  display: flex;
+  gap: 8px;
+  padding: 1rem;
+}
+.about-me img {
+  border: 2px solid var(--second-black);
+  border-top: transparent;
+  border-right: transparent;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+@media (min-width: 756px) {
+  .about-me {
+    padding: 5rem;
+  }
+}
