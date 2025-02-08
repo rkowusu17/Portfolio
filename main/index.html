@@ -12,27 +12,32 @@
   </head>
   <body>
     <header id="#top">
-      <h1>
-        <a href="#top">Reggie's Portfolio</a>
-      </h1>
-      <section class="desktop-view">
-        <ul class="desktop-links">
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Works</a></li>
-          <li><a href="#">Mail-me</a></li>
-        </ul>
-      </section>
-
-      <section class="moble-view">
-        <div>
-          <i class="fa-solid fa-bars"></i>
-          <ul class="mobile-links">
-            <li><a href="#">Contacts</a></li>
+      <nav>
+        <h1>
+          <a href="#top" id="h">Reggie's Portfolio</a>
+        </h1>
+        <section class="desktop-view">
+          <ul class="desktop-links">
+            <li><a href="#contacts">Contacts</a></li>
             <li><a href="#">Works</a></li>
             <li><a href="#">Mail-me</a></li>
           </ul>
+        </section>
+
+        <div class="mobile-links">
+          <i class="fa-solid fa-xmark"></i>
+          <ul>
+            <li class="link-item"><a href="#contacts">Contacts</a></li>
+            <hr />
+            <li class="link-item"><a href="#">Works</a></li>
+            <hr />
+            <li class="link-item"><a href="#">Mail-me</a></li>
+          </ul>
         </div>
-      </section>
+        <section class="moble-view">
+          <i class="fa-solid fa-bars"></i>
+        </section>
+      </nav>
     </header>
 
     <main>
@@ -53,7 +58,7 @@
           I am an amazing junior frontend and
           <span class="highlight">C#</span> developer who has eyes for
           <span class="highlight nospace">data science and mathematics.</span> I
-          believe so much in hardwork, abstraction and collaboration and as so I
+          believe so much in hardwork, abstraction and collaboration. As so I
           always look forward to learn more by working with other experienced
           and great developers to make dream websites a reality. I aspire to
           become a fullstack <span class="highlight">[C#]</span> developer who
@@ -72,10 +77,82 @@
           <img src="/build/img/profileU.jpg" alt="profile-img" width="200" />
         </figure> -->
       </section>
-      <section class="contacts" id="contacts">We can get intouch via:</section>
-      <section class="stack" id="stack">My stack. Download my cv</section>
-      <section class="works" id="works"></section>
+      <hr />
+      <section class="contacts" id="contacts">
+        <p>We can get intouch via:</p>
+        <div class="block icons">
+          <a href="https://twitter.com/Re_ggie12" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            <span>Re_ggie12</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/reginald-owusu-kwaku/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Reginald Owusu Kwaku</span>
+          </a>
+          <a href="https://github.com/rkowusu17" target="_blank">
+            <i class="fa-brands fa-github"> </i>
+            <span>rkowusu17</span>
+          </a>
+          <a href="mailto:owusureginald17@gmail.com"
+            ><i class="fa-regular fa-envelope"></i>
+            <span>owusureginald17@gmail.com</span></a
+          >
+        </div>
+        <hr />
+        <section class="stack" id="stack">
+          <h3>My stack</h3>
+          <div class="stack-list">
+            <img src="/build/img/html.svg" alt="HTML" width="120" />
+            <img src="/build/img/CSS.svg" alt="CSS" width="120" />
+            <img src="/build/img/JS.svg" alt="JS.svg" width="100" />
+            <img src="/build/img/Tailwind.svg" alt="Tailwind.svg" width="120" />
+            <img src="/build/img/React.svg" alt="React.svg" width="120" />
+            <img src="/build/img/csharp.svg" alt="csharp.svg" width="120" />
+            <img src="/build/img/dotnet.svg" alt="dotnet.svg" width="120" />
+          </div>
+          <div class="stack-list">
+            <img src="/build/img/html.svg" alt="HTML" width="120" />
+            <img src="/build/img/CSS.svg" alt="CSS" width="120" />
+            <img src="/build/img/JS.svg" alt="JS.svg" width="100" />
+            <img src="/build/img/Tailwind.svg" alt="Tailwind.svg" width="120" />
+            <img src="/build/img/React.svg" alt="React.svg" width="120" />
+            <img src="/build/img/csharp.svg" alt="csharp.svg" width="120" />
+            <img src="/build/img/dotnet.svg" alt="dotnet.svg" width="120" />
+          </div>
+          <section>
+            <a href="">
+              <button>Download my cv</button>
+            </a>
+          </section>
+        </section>
+      </section>
+      <hr />
+
+      <section class="works block" id="works">Works</section>
     </main>
-    <footer>Reggie.io &copy;</footer>
+
+    <hr />
+    <form>
+      <fieldset>
+        <legend>Any suggestions??</legend>
+        <div class="input-grp">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-grp">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="input-grp">
+          <label for="comment">Comment</label>
+          <textarea id="comment"></textarea>
+        </div>
+      </fieldset>
+    </form>
+    <footer>Reggie.io <span id="year"></span> &copy;</footer>
+    <script src="/apps.js"></script>
   </body>
 </html>

@@ -10,101 +10,67 @@
         padding: 0;
       }
       main {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        /* overflow: hidden; */
+        min-height: 100vh;
       }
-      .animate-box div {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        background-color: transparent;
-        border: 2px solid black;
+      .dummy {
+        height: 80vh;
+        font-size: 30px;
+        text-align: center;
+        padding: 1.3rem;
       }
-      .animate-box div:nth-child(1) {
-        top: 20%;
-        left: 10%;
-        animation: animate 7s linear infinite;
-      }
-      .animate-box div:nth-child(2) {
-        top: 30%;
-        left: 40%;
-        animation: animate 10s linear infinite;
-      }
-      .animate-box div:nth-child(3) {
-        top: 50%;
-        right: 10%;
-        animation: animate 2s linear infinite;
-      }
-      .animate-box div:nth-child(4) {
-        top: 20%;
-        left: 50%;
-        animation: animate 4s linear infinite;
-      }
-      .animate-box div:nth-child(5) {
-        top: 100%;
-        left: 10%;
-        animation: animate 12s linear infinite;
-      }
-      .animate-box div:nth-child(6) {
-        top: 60%;
-        left: 10%;
-        animation: animate 4s linear infinite;
-      }
-      .animate-box div:nth-child(7) {
-        top: 80%;
-        left: 70%;
-        animation: animate 7s linear infinite;
-      }
-      .animate-box div:nth-child(8) {
-        top: 32%;
-        left: 50%;
-        animation: animate 7s linear infinite;
-      }
-      .animate-box div:nth-child(9) {
-        top: 50%;
-        left: 50%;
-        animation: animate 7s linear infinite;
-      }
-      .animate-box div:nth-child(10) {
-        top: 32%;
-        left: 23%;
-        animation: animate 7s linear infinite;
-      }
-      .animate-box div:nth-child(11) {
-        top: 78%;
-        left: 50%;
-        animation: animate 7s linear infinite;
+      .box {
+        width: 300px;
+        height: 100px;
+        background-color: red;
+        margin: 40px;
+        animation: scroll 1s linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
       }
 
-      @keyframes animate {
-        0% {
-          transform: scale(0) translateY(0) rotate(0);
-          opacity: 1;
-        }
-
-        100% {
-          transform: scale(1.3) translateY(-90px) rotate(360deg);
+      @keyframes scroll {
+        from {
+          transform: scale(0);
           opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
         }
       }
     </style>
   </head>
   <body>
     <main>
-      <div class="animate-box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <div class="dummy">Scroll dummy</div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit eius in
+        similique dolore alias. Iure perspiciatis eligendi impedit assumenda
+        exercitationem in ratione voluptas sint numquam dolorum quos omnis,
+        iste, neque adipisci deserunt possimus aut itaque provident blanditiis
+        cumque vel tempore? Doloremque sequi est laborum dolor consectetur
+        minima. Quos atque illum eaque omnis modi voluptate labore earum eveniet
+        possimus aliquam, eligendi debitis reiciendis! At adipisci deserunt
+        voluptates, ipsa perspiciatis blanditiis repellat delectus fugiat
+        distinctio nihil in harum animi pariatur maiores quia, incidunt aliquid
+        quisquam quae placeat asperiores sequi? Eaque nam deserunt, placeat
+        magni, adipisci voluptates hic explicabo ducimus vero fugiat, temporibus
+        asperiores. Ipsam repudiandae suscipit totam! Nesciunt sed blanditiis
+        explicabo et reprehenderit, veniam voluptatum exercitationem ipsa
+        maiores velit possimus eum fuga numquam provident distinctio facere?
+        Nisi facilis qui, ad nesciunt assumenda provident possimus autem ratione
+        obcaecati voluptate architecto dolore aut mollitia debitis dolorem
+        recusandae veniam laboriosam a excepturi doloribus neque eligendi? Iste
+        non provident necessitatibus, optio praesentium, earum ipsum obcaecati
+        at sapiente illum libero. Iure commodi debitis, illum qui illo
+        recusandae expedita modi amet. Dolorem quos ipsum ad ea, itaque voluptas
+        commodi laborum ex illum quis. Voluptates necessitatibus dolor
+        repellendus corporis quis, incidunt cum voluptate harum, dolorum,
+        dolorem modi tempora consectetur?
+      </p>
     </main>
   </body>
 </html>

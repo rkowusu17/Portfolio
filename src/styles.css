@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-  scroll-margin-top: 4rem;
   scroll-behavior: smooth;
+}
+
+hr {
+  border: none;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+  height: 10px;
+  background: var(--header-color);
 }
 :root {
   --header-Font: "Roboto", serif;
   --header-color: #c3bef7;
-  --header-FS: 2rem;
+  --header-FS: 2.2rem;
   --link-FS: 1.5rem;
   --background: #e5ecf4;
   --white-color: #ffffff;
@@ -15,7 +23,7 @@ html {
   --body-Font: "Poppins", serif;
   --header-w: 500;
   --primary-black: black;
-  --second-black: #333;
+  --second-black: #33333377;
   --border-col: #effffa;
 }
 
@@ -28,6 +36,8 @@ html {
 body {
   min-height: 100vh;
   background-color: var(--background);
+  font-size: var(--normal-FS);
+  font-family: var(--body-Font);
 }
 
 header {
@@ -37,19 +47,22 @@ header {
   justify-content: space-around;
   align-items: center;
   font-family: var(--header-Font);
-  color: var(--primary-black);
   font-weight: var(--header-w);
   position: fixed;
   top: 0;
-  padding: 0.3rem;
+  z-index: 9;
+}
+#h {
+  color: black;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: var(--second-black);
 }
 header h1 {
   font-size: var(--header-FS);
   font-weight: var(--header-w);
+  color: var(--primary-black);
 }
 .desktop-links {
   display: flex;
@@ -65,27 +78,69 @@ header h1 {
   transition: 0.5s;
   font-size: var(--link-FS);
   border-bottom: 3px solid transparent;
+  color: var(--second-black);
 }
-.desktop-links a:hover {
+a:hover {
   border-color: var(--border-col);
+  color: black;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem;
+  font-family: var(--header-Font);
+  font-weight: var(--header-w);
 }
 
-main {
+.mobile-links {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: var(--header-color);
+  font-size: 2rem;
+  transition: all 0.93 ease-in-out;
+}
+
+.mobile-links ul {
+  list-style-type: none;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  padding: 0 0.8rem;
-  margin: 0.5rem 0;
-  font-size: var(--normal-FS);
-  font-family: var(--body-Font);
+  text-align: center;
+  padding: 5rem;
+  gap: 3rem;
+}
+
+.mobile-links i {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.mobile-links.active {
+  left: 0;
+}
+.moble-view {
+  font-size: var(--header-FS);
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   gap: 6rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .animate-box div {
   position: absolute;
   width: 50px;
   height: 50px;
-  border: 2px solid #938d8dbe;
+  border: 2px solid #938d8dde;
 }
 .animate-box div:nth-child(1) {
   top: 30%;
@@ -139,6 +194,7 @@ main {
 }
 
 .about-me {
+  padding: 0.7rem;
   display: flex;
   flex-flow: column-reverse wrap;
   justify-content: center;
@@ -155,13 +211,128 @@ main {
   outline: 3px var(--white-color);
 }
 
+.about-me figure {
+  animation: scroll 2s linear;
+}
+
 .highlight {
   animation: Changecolor 1s linear forwards;
   padding: 5px;
   white-space: nowrap;
 }
 
+.contacts {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 9rem;
+}
+
+.contacts p {
+  color: #7e74ef;
+  font-size: calc(var(--header-FS) - 0.4rem);
+}
+.icons {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5rem;
+  /* justify-content: stretch; */
+}
+.icons a {
+  padding: 0.8rem;
+  border: 2px solid transparent;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 20px;
+}
+.icons a:last-child {
+  font-size: 1rem;
+}
+.icons a:hover {
+  border-color: var(--border-col);
+  box-shadow: 5px 5px 16px 5px var(--header-color),
+    -5px -5px 16px 5px var(--header-color);
+}
+
+.block {
+  animation: scroll 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
+}
+
+.stack {
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  background-color: var(--background);
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+.stack-list {
+  display: inline-block;
+  animation: slide-show 7s linear infinite;
+}
+.stack::before {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    var(--background)
+  );
+}
+.stack::after {
+  top: 0;
+  right: 0;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    var(--background)
+  );
+}
+.stack-list img {
+  padding: 0 20px;
+  margin: 20px 2rem;
+  height: 100px;
+}
+.stack:hover .stack-list {
+  animation-play-state: paused;
+}
+
+.stack button {
+  margin-top: 20px;
+  font-family: var(--body-Font);
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--header-color);
+  cursor: pointer;
+}
+.stack button:hover {
+  background-color: #7e74ef;
+}
 @media (min-width: 756px) {
+  nav {
+    padding: 1.7rem;
+  }
   .about-me {
     display: flex;
     flex-flow: row;
@@ -193,6 +364,18 @@ main {
     padding: 6rem;
     line-height: 3.5rem;
   }
+  .desktop-links {
+    gap: 30px;
+  }
+  .icons {
+    flex-flow: row;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: stretch;
+  }
+  .stack-list img {
+    width: 200px;
+  }
 }
 
 @keyframes Changecolor {
@@ -205,6 +388,15 @@ main {
   }
 }
 
+@keyframes slide-show {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 @keyframes animate {
   0% {
     transform: scale(0) translateY(0) rotate(0);
@@ -213,6 +405,18 @@ main {
   100% {
     transform: scale(1.3) translateY(90px) rotate(360deg);
     opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
