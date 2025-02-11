@@ -11,6 +11,7 @@
     ></script>
   </head>
   <body>
+    <!-- header -->
     <header id="#top">
       <nav>
         <h1>
@@ -19,7 +20,7 @@
         <section class="desktop-view">
           <ul class="desktop-links">
             <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#">Works</a></li>
+            <li><a href="#works">Works</a></li>
             <li><a href="#">Mail-me</a></li>
           </ul>
         </section>
@@ -29,7 +30,7 @@
           <ul>
             <li class="link-item"><a href="#contacts">Contacts</a></li>
             <hr />
-            <li class="link-item"><a href="#">Works</a></li>
+            <li class="link-item"><a href="#works">Works</a></li>
             <hr />
             <li class="link-item"><a href="#">Mail-me</a></li>
           </ul>
@@ -41,6 +42,7 @@
     </header>
 
     <main>
+      <!-- Animation -->
       <div class="animate-box">
         <div></div>
         <div></div>
@@ -53,6 +55,8 @@
         <div></div>
         <div></div>
       </div>
+
+      <!-- About-me -->
       <section class="about-me">
         <p>
           I am an amazing junior frontend and
@@ -78,8 +82,10 @@
         </figure> -->
       </section>
       <hr />
+
+      <!-- Contact -->
       <section class="contacts" id="contacts">
-        <p>We can get intouch via:</p>
+        <h3 class="sec-heads">We can get intouch via:</h3>
         <div class="block icons">
           <a href="https://twitter.com/Re_ggie12" target="_blank">
             <i class="fa-brands fa-twitter"></i>
@@ -103,7 +109,7 @@
         </div>
         <hr />
         <section class="stack" id="stack">
-          <h3>My stack</h3>
+          <h3 class="sec-heads">My stack</h3>
           <div class="stack-list">
             <img src="/build/img/html.svg" alt="HTML" width="120" />
             <img src="/build/img/CSS.svg" alt="CSS" width="120" />
@@ -123,15 +129,31 @@
             <img src="/build/img/dotnet.svg" alt="dotnet.svg" width="120" />
           </div>
           <section>
-            <a href="">
-              <button>Download my cv</button>
+            <a
+              href="https://drive.google.com/file/d/1GFq-i4_5dYDuT6L13RGRts-JdpF2ZtOG/view?usp=drive_link"
+              target="_blank"
+            >
+              <button>👀Peep my resume</button>
             </a>
           </section>
         </section>
       </section>
       <hr />
 
-      <section class="works block" id="works">Works</section>
+      <section class="works" id="works">
+        <h3 class="sec-heads">Works</h3>
+        <div class="work-list">
+          <div class="work">
+            <img src="/build/img/JS-miniw.jpg" alt="JS" width="100" />
+          </div>
+          <div class="work">
+            <img src="/build/img/rocketdab.png" alt="Acme-Rocket" />
+          </div>
+          <div class="work">
+            <img src="/build/img/travel-soul.jpg" alt="Travel-Soul" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <hr />

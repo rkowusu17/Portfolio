@@ -54,6 +54,7 @@ header {
 }
 #h {
   color: black;
+  letter-spacing: 2px;
 }
 a {
   text-decoration: none;
@@ -136,6 +137,11 @@ main {
   gap: 6rem;
   /* overflow-x: hidden; */
 }
+
+.sec-heads {
+  color: #7e74ef;
+}
+/* top animation */
 .animate-box div {
   position: absolute;
   width: 50px;
@@ -192,6 +198,8 @@ main {
   left: 35%;
   animation: animate 5s linear infinite;
 }
+
+/* About me */
 
 .about-me {
   padding: 0.7rem;
@@ -329,6 +337,36 @@ main {
 .stack button:hover {
   background-color: #7e74ef;
 }
+
+/* Works  */
+.works {
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  margin: 0.9rem 0;
+  padding: 2rem;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3.4rem;
+  margin-top: 1rem;
+}
+.work {
+  height: (12rem);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+
+  /* height: 100%; */
+  border-radius: 10px;
+  display: block;
+}
 @media (min-width: 756px) {
   nav {
     padding: 1.7rem;
@@ -376,6 +414,25 @@ main {
   .stack-list img {
     width: 200px;
   }
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+fieldset {
+  width: 80%;
+  padding: 1rem;
+
+  border-radius: 10px;
+  border: 2px solid transparent;
+  border-top-color: #333;
+}
+legend {
+  text-align: center;
+  padding: 10px;
 }
 
 @keyframes Changecolor {
