@@ -24,7 +24,7 @@ hr {
   --header-w: 500;
   --primary-black: black;
   --second-black: #33333377;
-  --border-col: #effffa;
+  --border-col: #10634960;
 }
 
 * {
@@ -211,7 +211,7 @@ main {
   line-height: 2.3;
 }
 .about-me img {
-  border: 2px solid var(--second-black);
+  border: 2px solid var(--white-color);
   border-top: transparent;
   border-right: transparent;
   border-radius: 15px;
@@ -333,6 +333,7 @@ main {
   border: none;
   background-color: var(--header-color);
   cursor: pointer;
+  padding: 10px 20px;
 }
 .stack button:hover {
   background-color: #7e74ef;
@@ -341,6 +342,7 @@ main {
 /* Works  */
 .works {
   text-align: center;
+  scroll-margin-top: 9rem;
   display: grid;
   place-content: center;
   gap: 2rem;
@@ -349,24 +351,140 @@ main {
 }
 
 .work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 3.4rem;
-  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1rem;
 }
+
 .work {
-  height: (12rem);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s;
 }
 .work img {
   width: 100%;
-
-  /* height: 100%; */
   border-radius: 10px;
-  display: block;
+  height: 100%;
+  /* display: block; */
 }
+
+.description {
+  position: absolute;
+  background: linear-gradient(to top, #7468f1d6, #c7c3c385);
+  padding: 10px;
+  bottom: -100%;
+  height: 100%;
+  width: fit-content;
+  display: grid;
+  place-content: center;
+  grid-gap: 1rem;
+  transition: all 0.7s;
+}
+
+.description a {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  background-color: var(--white-color);
+  color: red;
+  padding: 20px 10px;
+  display: grid;
+  place-content: center;
+  border-radius: 30px;
+}
+
+.description a:hover {
+  color: var(--border-col);
+}
+
+.description h4,
+p {
+  margin-top: 0.5rem;
+}
+.work:hover .description {
+  bottom: 0;
+}
+
+.works button {
+  font-size: var(--link-FS);
+  padding: 10px 20px;
+  width: 200px;
+  border: 2px solid var(--border-col);
+  background-color: transparent;
+  border-radius: 10px;
+  transition: all 8ms;
+}
+
+.works button:hover {
+  border-color: var(--header-color);
+  color: #7e74ef;
+}
+
+/* form */
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+fieldset {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 10px 3px 5px var(--second-black),
+    -10px -3px 5px var(--second-black);
+}
+.input-grp {
+  margin: 20px 5px;
+}
+
+input,
+textarea {
+  border: 1px solid #5c5a5a56;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 1.2rem;
+  background-color: #d8e3f055;
+}
+
+textarea:focus,
+input:focus {
+  border: 2px solid var(--border-col);
+}
+
+textarea {
+  display: block;
+  margin: 20px auto;
+  width: 72%;
+  height: 150px;
+  resize: none;
+}
+fieldset button {
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem 28px;
+  background-color: rgba(170, 226, 170, 0.637);
+  border-radius: 10px;
+  border: none;
+  font-size: var(--link-FS);
+  color: var(--border-col);
+  font-weight: 600;
+}
+
+fieldset button:hover {
+  color: var(--white-color);
+  background-color: #7e74ef;
+}
+
 @media (min-width: 756px) {
   nav {
     padding: 1.7rem;
@@ -408,31 +526,24 @@ main {
   .icons {
     flex-flow: row;
     padding: 2rem;
-    gap: 1rem;
-    justify-content: stretch;
+    gap: 8rem;
   }
   .stack-list img {
     width: 200px;
   }
-}
 
-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-fieldset {
-  width: 80%;
-  padding: 1rem;
-
-  border-radius: 10px;
-  border: 2px solid transparent;
-  border-top-color: #333;
-}
-legend {
-  text-align: center;
-  padding: 10px;
+  .work-list {
+    flex-flow: row nowrap;
+    gap: 10rem;
+  }
+  .work {
+    width: 34%;
+    height: 100%;
+  }
+  form {
+    margin: 2rem auto;
+    width: 70%;
+  }
 }
 
 @keyframes Changecolor {
