@@ -29,3 +29,22 @@ mobileMenu.addEventListener("click", () => {
 // function close() {
 //   mobileMenu.style.display = "hidden";
 // }
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbwOGDbTiSpy9uK12xrRUpTkMra2iioo1RGm93y0cg0bQe60t3O8cTc2tfjPs87W_Mme/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msgEl.innerHTML = "Message sent successfully!";
+      setTimeout(function () {
+        msgEl.innerHTML = "";
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+const msgEl = document.getElementById("msg");

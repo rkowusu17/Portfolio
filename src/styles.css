@@ -409,7 +409,10 @@ p {
 .work:hover .description {
   bottom: 0;
 }
-
+.see-more {
+  display: block;
+  margin: 20px 0;
+}
 .works button {
   font-size: var(--link-FS);
   padding: 10px 20px;
@@ -447,13 +450,15 @@ fieldset {
 
 input,
 textarea {
+  display: block;
+  margin: 20px auto;
   border: 1px solid #5c5a5a56;
   width: 80%;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 20px;
   outline: none;
   font-size: 1.2rem;
-  background-color: #d8e3f055;
+  background-color: #ccdaeb9f;
 }
 
 textarea:focus,
@@ -462,9 +467,6 @@ input:focus {
 }
 
 textarea {
-  display: block;
-  margin: 20px auto;
-  width: 72%;
   height: 150px;
   resize: none;
 }
@@ -472,7 +474,7 @@ fieldset button {
   display: block;
   margin: 1rem auto;
   padding: 1rem 28px;
-  background-color: rgba(170, 226, 170, 0.637);
+  background-color: rgba(87, 215, 87, 0.199);
   border-radius: 10px;
   border: none;
   font-size: var(--link-FS);
@@ -482,7 +484,13 @@ fieldset button {
 
 fieldset button:hover {
   color: var(--white-color);
-  background-color: #7e74ef;
+  background-color: rgba(92, 199, 92, 0.667);
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -10px;
+  display: block;
 }
 
 @media (min-width: 756px) {
