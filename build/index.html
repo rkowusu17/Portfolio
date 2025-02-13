@@ -1,384 +1,234 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/output.css" />
+    <title>Reggie.io</title>
+    <link rel="stylesheet" href="/src/styles.css" />
     <script
       src="https://kit.fontawesome.com/c6b3e02100.js"
       crossorigin="anonymous"
     ></script>
-    <script src="apps.js" defer></script>
   </head>
+  <body>
+    <!-- header -->
+    <header id="#top">
+      <nav>
+        <h1>
+          <a href="#top" id="h">Reggie's Portfolio</a>
+        </h1>
+        <section class="desktop-view">
+          <ul class="desktop-links">
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="mailto:owusureginald17@gmail.com">Mail-me</a></li>
+          </ul>
+        </section>
 
-  <body
-    class="bg-gradient-to-b from-white to-custom-end dark:text-slate-800 flex flex-col min-h-screen justify-center items-center"
-  >
-    <header
-      class="w-full bg-teal-600 rounded-b-lg shadow-lg shadow-black justify-around flex fixed top-0 z-10"
-    >
-      <h1 class="text-2xl p-4 text-center font-bold">
-        <a href="#top">My Portfolio</a>
-      </h1>
-      <button id="mobile-btn" class="sm:hidden text-4xl px-5">&#9776;</button>
-      <nav
-        aria-label="mobile-menu"
-        id="mobile-menu"
-        class="hidden w-full min-h-screen absolute top-0 right-0 gap-10 flex-col text-2xl bg-slate-500 opacity-95 p-10 origin-top-left animate-show-menu"
-      >
-        <button
-          id="close-btn"
-          class="self-start absolute top-0 right-0 p-5 hover:scale-125 text-6xl"
-        >
-          &times;
-        </button>
-
-        <ul
-          class="text-4xl flex flex-col gap-10 justify-center items-center py-24 transition-all my-10"
-        >
-          <li class="hover:scale-125">
-            <a class="py-10 hover:opacity-55" href="#contacts">Contacts</a>
-          </li>
-          <li class="hover:scale-125">
-            <a class="py-10 hover:opacity-55" href="#work">Works</a>
-          </li>
-          <li class="hover:scale-125">
-            <a class="py-10 hover:opacity-55" href="#stack"> Skills </a>
-          </li>
-          <li class="hover:scale-125">
-            <a
-              class="py-10 self-start ali hover:opacity-55"
-              href="mailto:owusureginald17@gmail.com"
-              >Mail-me
-            </a>
-          </li>
-        </ul>
+        <div class="mobile-links">
+          <i class="fa-solid fa-xmark"></i>
+          <ul>
+            <li class="link-item"><a href="#contacts">Contacts</a></li>
+            <hr />
+            <li class="link-item"><a href="#works">Works</a></li>
+            <hr />
+            <li class="link-item">
+              <a href="mailto:owusureginald17@gmail.com">Mail-me</a>
+            </li>
+          </ul>
+        </div>
+        <section class="moble-view">
+          <i class="fa-solid fa-bars"></i>
+        </section>
       </nav>
-      <section class="p-5 hidden sm:flex sm:gap-5 font-semibold text-xl">
-        <a class="hover:opacity-40" href="contacts.html">Contact</a>
-        <a class="hover:opacity-40" href="works.html">Works</a>
-        <a class="hover:opacity-40" href="#stack"> Skills </a>
-        <a class="hover:opacity-40" href="mailto:owusureginald17@gmail.com">
-          Mail-me
-        </a>
-      </section>
     </header>
-    <main
-      class="w-full mt-32 grow flex flex-col items-center justify-center gap-10 md:gap-5"
-    >
-      <section
-        id="top"
-        class="bg-custom-bg w-95 dark:bg-transparent dark:text-slate-800 border p-2 rounded-2xl scroll-mt-40"
-      >
-        <h1 class="text-center font-bold text-2xl">About - Me</h1>
 
-        <div
-          class="flex flex-col-reverse gap-2 sm:flex-row sm:gap-2 sm:items-center border border-slate-600 sm:border-none rounded-xl p-2"
-        >
-          <p class="text-lg font-semibold md:text-2xl sm:p-6">
-            I'm Reginald Kwaku Owusu, an amazing frontend developer aspiring to
-            be a data scientist and also have the passion for Machine learning.
-            I'm eager to learn more by working with other experienced and great
-            developers to make my dream of becoming a great developer with time
-            and more practice come true. I aspire to become a fullstack
-            developer who would make productive changes in my place of work and
-            in the tech world at large. I am willing to learn related
-            programming languages, skills and gain more experience inorder to
-            achieve goals. However, I'm available for any Frontend internship or
-            an entry level role.
-          </p>
-          <figure class="flex sm:hidden rounded-2xl">
-            <img
-              class="mx-auto w-32 h-auto sm:nomw rounded-2xl"
-              src="./img/profileU.jpg"
-              alt="profile_pic"
-            />
-            <figcaption class="m-10 rounded-2xl">
-              <h2 class="font-bold">Owusu Reginald</h2>
-              Front-end developer
-            </figcaption>
-          </figure>
-          <div class="hidden sm:block sm:h-1/3 w-maxw">
-            <img
-              class="hidden mx-auto sm:max-w-2xl sm:float-right sm:block rounded-2xl"
-              src="./img/profileU.jpg"
-              alt="profile_pic"
-              height="200px"
-              width="300px"
-            />
+    <main>
+      <!-- Animation -->
+      <div class="animate-box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- About-me -->
+      <section class="about-me">
+        <p>
+          I am an amazing junior frontend and
+          <span class="highlight">C#</span> developer who has eyes for
+          <span class="highlight nospace">data science and mathematics.</span> I
+          believe so much in hardwork, abstraction and collaboration. As so I
+          always look forward to learn more by working with other experienced
+          and great developers to make dream websites a reality. I aspire to
+          become a fullstack <span class="highlight">[C#]</span> developer who
+          would make productive changes in my line of work and in the tech world
+          at large. I'm available for any Frontend internship or an entry level
+          role.
+        </p>
+        <figure>
+          <img src="/build/img/profileU.jpg" alt="profile_pic" width="200" />
+          <figcaption>
+            <h3>Reginald Owusu</h3>
+            Front-end developer
+          </figcaption>
+        </figure>
+        <!-- <figure>
+          <img src="/build/img/profileU.jpg" alt="profile-img" width="200" />
+        </figure> -->
+      </section>
+      <hr />
+
+      <!-- Contact -->
+      <section class="contacts" id="contacts">
+        <h3 class="sec-heads">We can get intouch via:</h3>
+        <div class="block icons">
+          <a href="https://twitter.com/Re_ggie12" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            <span>Re_ggie12</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/reginald-owusu-kwaku/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <span>Reginald Owusu Kwaku</span>
+          </a>
+          <a href="https://github.com/rkowusu17" target="_blank">
+            <i class="fa-brands fa-github"> </i>
+            <span>rkowusu17</span>
+          </a>
+          <a href="mailto:owusureginald17@gmail.com"
+            ><i class="fa-regular fa-envelope"></i>
+            <span>owusureginald17@gmail.com</span></a
+          >
+        </div>
+        <hr />
+        <section class="stack" id="stack">
+          <h3 class="sec-heads">My stack</h3>
+          <div class="stack-list">
+            <img src="/build/img/html.svg" alt="HTML" width="120" />
+            <img src="/build/img/CSS.svg" alt="CSS" width="120" />
+            <img src="/build/img/JS.svg" alt="JS.svg" width="100" />
+            <img src="/build/img/Tailwind.svg" alt="Tailwind.svg" width="120" />
+            <img src="/build/img/React.svg" alt="React.svg" width="120" />
+            <img src="/build/img/csharp.svg" alt="csharp.svg" width="120" />
+            <img src="/build/img/dotnet.svg" alt="dotnet.svg" width="120" />
+          </div>
+          <div class="stack-list">
+            <img src="/build/img/html.svg" alt="HTML" width="120" />
+            <img src="/build/img/CSS.svg" alt="CSS" width="120" />
+            <img src="/build/img/JS.svg" alt="JS.svg" width="100" />
+            <img src="/build/img/Tailwind.svg" alt="Tailwind.svg" width="120" />
+            <img src="/build/img/React.svg" alt="React.svg" width="120" />
+            <img src="/build/img/csharp.svg" alt="csharp.svg" width="120" />
+            <img src="/build/img/dotnet.svg" alt="dotnet.svg" width="120" />
+          </div>
+          <section>
+            <a
+              href="https://drive.google.com/file/d/1GFq-i4_5dYDuT6L13RGRts-JdpF2ZtOG/view?usp=drive_link"
+              target="_blank"
+            >
+              <button>👀Peep my resume</button>
+            </a>
+          </section>
+        </section>
+      </section>
+      <hr />
+
+      <section class="works" id="works">
+        <h3 class="sec-heads">Works</h3>
+        <div class="work-list">
+          <div class="work work-1">
+            <img src="/build/img/JS-miniw.png" alt="JS" />
+            <div class="description">
+              <h4 class="work-title">Mini-projects</h4>
+              <p>
+                These are some mini-projects made with TailwindCss and
+                JavaScript. My personal favourite
+              </p>
+              <a
+                href="https://mini-projects-eight-mu.vercel.app/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work work-2">
+            <img src="/build/img/rocketdab.png" alt="Acme-Rocket" />
+            <div class="description">
+              <h4 class="work-title">Acme Rocket</h4>
+              <p>
+                A landing page talking about space exploration and rockets with
+                TailwindCSs.
+              </p>
+              <a href="https://acme-rocket-59sl.onrender.com" target="_blank">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <div class="work work-3">
+            <img src="/build/img/travel-soul.png" alt="Travel-Soul" />
+            <div class="description">
+              <h4 class="work-title">Soul Travel</h4>
+              <p>
+                This travel landing page advertising a travel company's services
+                with HTML, vanilla CSS and JavaScript. <br />
+                Watch out for the entrance animation.
+              </p>
+              <a href="#" target="_blank">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
           </div>
         </div>
+        <a class="see-more" href="https://github.com/rkowusu17">
+          <button>See more</button>
+        </a>
       </section>
-
-      <hr class="w-3/5 h-1 bg-slate-700 mx-auto" />
-
-      <aside class="p-2 grid place-content-center gap-4 sm:gap-2 lay md:mx-2">
-        <section
-          id="contacts"
-          style="border: 1px solid black; width: 2/3; height: 450px"
-          class="rounded-2xl scroll-m-40 cursor-pointer sm:text-lg dark:bg-transparent dark:text-slate-800 md:border-2 md:border-slate-700"
-        >
-          <a href="contacts.html">
-            <h1 class="text-center font-bold text-2xl m-2">Contacts</h1>
-            <div
-              class="mx-auto h-4/5 border border-t-slate-600 border-transparent rounded-xl flex flex-col items-center p-4 md:minh-main"
-            >
-              <img
-                class="rounded mx-auto"
-                src="./img/200w (6).webp"
-                alt="Connect"
-                height="200"
-                width="200"
-              />
-              <p>let's connect via the following means:</p>
-              <div class="mt-10">
-                <a
-                  class="flex gap-2 hover:text-teal-500"
-                  href="https://twitter.com/Re_ggie12"
-                  target="_blank"
-                >
-                  <i class="p-2 fa-brands fa-twitter"></i>
-                  <h3>Re_ggie12</h3>
-                </a>
-                <a
-                  class="flex gap-2 hover:text-teal-500"
-                  href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
-                  target="_blank"
-                >
-                  <i class="p-2 fa-brands fa-linkedin"></i>
-                  <h3>Reginald Owusu Kwaku</h3>
-                </a>
-                <a
-                  class="flex gap-2 hover:text-teal-500"
-                  href="https://github.com/rkowusu17"
-                  target="_blank"
-                >
-                  <i class="p-2 fa-brands fa-github"> </i>
-                  <h3>rkowusu17</h3>
-                </a>
-                <a
-                  class="flex hover:text-teal-500"
-                  href="mailto:owusureginald17@gmail.com"
-                  ><i class="p-2 fa-regular fa-envelope"></i>
-                  <h3>owusureginald17@gmail.com</h3></a
-                >
-              </div>
-            </div>
-          </a>
-        </section>
-
-        <section
-          id="stack"
-          style="border: 1px solid black; width: 2/3; height: 450px"
-          class="p-2 rounded-2xl scroll-m-40 sm:text-lg dark:bg-transparent dark:text-slate-800 md:border-2 md:border-slate-700"
-        >
-          <div>
-            <h1 class="m-2 text-center font-bold text-2xl rounded-r-2xl">
-              My stack
-            </h1>
-            <div
-              class="flex flex-col items-center border border-transparent border-t-slate-600 rounded-xl p-4 text-slate-950 dark:text-slate-900"
-            >
-              <img
-                src="./img/giphy.webp"
-                alt="stack"
-                class="rounded"
-                height="150"
-                width="200"
-              />
-              <p>Below are some programming languages I am familiar with:</p>
-              <ul class="list-disc my-5 md:my-2">
-                <li>Tailwind CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>C#</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="work"
-          style="border: 1px solid black; width: 2/3; height: 450px"
-          class="p-2 rounded-2xl scroll-m-40 cursor-pointer sm:text-lg dark:bg-transparent dark:text-slate-800 md:border-2 md:border-slate-700"
-        >
-          <a href="works.html">
-            <h1 class="text-center font-bold text-2xl m-2">Works</h1>
-            <div
-              class="max-w-full flex flex-col items-center rounded-xl p-2 border border-transparent border-t-slate-600"
-            >
-              <img
-                src="./img/bdrop.webp"
-                alt="stack"
-                class="rounded"
-                height="200"
-                width="200"
-              />
-              They say actions speak louder than words. Have a look of some the
-              works I've done:
-              <div
-                class="mt-5 grid grid-cols-3 gap-1 border border-slate-400 rounded-lg p-2 sm:w-full md:self-end"
-              >
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  E-comms <span class="hidden">E-commerce</span>
-                </div>
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  Cloned Websites
-                </div>
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  <p>Projects</p>
-                </div>
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  <p>Landing Pages</p>
-                </div>
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  Inspired works
-                </div>
-                <div
-                  class="h-auto rounded-lg grid place-content-center border border-slate-400 hover:animate-pulse p-2 text-center"
-                >
-                  Up-coming works...
-                </div>
-              </div>
-            </div>
-          </a>
-        </section>
-      </aside>
-      <hr class="w-3/5 h-1 bg-slate-700 mx-auto" />
-
-      <form
-        action=""
-        style="
-          background-color: rgba(80, 112, 111, 0.098);
-          border-radius: 15px;
-          margin: 10px;
-          padding: 20px;
-        "
-        class="shadow-black w-95"
-      >
-        <fieldset class="w-full flex flex-col justify-center items-center m-5">
-          <legend
-            class="text-center text-black dark:text-slate-400 font-bold text-2xl mb-2"
-          >
-            Any Comment??
-          </legend>
-          <div class="w-full flex flex-col md:gap-5">
-            <div class="lg:w-full">
-              <label class="text-slate-200 text-3xl" for="e-mail"
-                >E-mail:</label
-              >
-              <br />
-              <input
-                type="email"
-                name=""
-                id="e-mail"
-                class="rounded-lg w-70 p-1 text-black lg:w-2/6"
-              />
-            </div>
-            <br />
-            <br />
-            <div class="w-full">
-              <label class="text-slate-200 text-3xl" for="Comment"
-                >Comment:</label
-              >
-              <br />
-              <textarea
-                id="Comment"
-                rows="5"
-                cols="20"
-                class="p-3 w-75 text-black rounded-lg resize-none active:outline-none lg:w-88"
-              ></textarea>
-            </div>
-          </div>
-          <div
-            class="text-black font-semibold flex items-center justify-center gap-12 mt-5 flex-col md:flex-row"
-          >
-            <button
-              id="submitbtn"
-              style="padding: 10px 20px"
-              class="text-xl rounded-xl bg-slate-600 dark:bg-transparent hover:bg-teal-900 sm:w-60 md:text-2xl"
-              value="Submit"
-            >
-              Submit
-            </button>
-            <button
-              id="resetbtn"
-              style="padding: 10px 20px"
-              class="text-xl rounded-xl dark:bg-transparent bg-slate-600 hover:bg-teal-900 sm:w-60 md:text-2xl"
-              value="Reset"
-            >
-              Reset
-            </button>
-          </div>
-        </fieldset>
-      </form>
-      <script>
-        const comment = document.getElementById("Comment");
-        const email = document.getElementById("e-mail");
-        const submitBtn = document.getElementById("submitbtn");
-        const resetBtn = document.getElementById("resetbtn");
-        submitBtn.addEventListener("click", () => {
-          let mail = email.value;
-          let text = comment.value;
-          if (mail.length > 0) {
-            if (text.length <= 1) {
-              alert("Kindly leave a comment ");
-            } else {
-              alert("Thank you for your comment");
-            }
-            console.log(mail);
-            console.log(text.length);
-          }
-          setTimeout(clear(), 5000);
-        });
-
-        resetBtn.addEventListener("click", clear());
-
-        function clear() {
-          email.value = " ";
-          comment.value = " ";
-        }
-      </script>
     </main>
 
-    <footer class="w-full bg-teal-600 text-center text-2xl p-1">
-      <h1 class="text-center text-2xl">
-        Reggie's portfolio &copy; <time id="year"></time>
-      </h1>
-      <div>
-        <a
-          href="https://twitter.com/Re_ggie12"
-          class="hover:text-white"
-          target="_blank"
-        >
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/reginald-owusu-kwaku-734236237/"
-          class="hover:text-white"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/rkowusu17"
-          class="hover:text-white"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </footer>
+    <hr />
+    <form name="submit-to-google-sheet">
+      <fieldset>
+        <div class="input-grp">
+          <input
+            name="Name"
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="input-grp">
+          <input
+            name="Email"
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+        </div>
+        <div class="input-grp">
+          <textarea
+            name="Message"
+            id="comment"
+            placeholder="Any Comments"
+          ></textarea>
+        </div>
+        <button>Submit</button>
+        <span id="msg"></span>
+      </fieldset>
+    </form>
+
+    <footer>Reggie.io <span id="year"></span> &copy;</footer>
+    <script src="/apps.js"></script>
   </body>
 </html>
