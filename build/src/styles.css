@@ -232,23 +232,24 @@ main {
 
 .contacts {
   width: 100%;
+  /* overflow-x: hidden; */
   background-color: #ffffff;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  scroll-margin-top: 9rem;
+
+  scroll-margin-top: 10rem;
 }
 
-.contacts p {
-  color: #7e74ef;
-  font-size: calc(var(--header-FS) - 0.4rem);
-}
 .icons {
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
   gap: 5rem;
+  animation: scroll 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 50%;
   /* justify-content: stretch; */
 }
 .icons a {
@@ -267,11 +268,11 @@ main {
     -5px -5px 16px 5px var(--header-color);
 }
 
-.block {
+/* .block {
   animation: scroll 1s linear;
   animation-timeline: view();
   animation-range: entry 0 cover 50%;
-}
+} */
 
 .stack {
   margin: 20px auto;
@@ -325,16 +326,16 @@ main {
 }
 
 .stack button {
+  text-align: center;
   margin-top: 20px;
   font-family: var(--body-Font);
-  padding: 10px 20px;
-  font-size: 1.3rem;
+  padding: 10px 7px;
+  font-size: 1rem;
   font-weight: bolder;
   border-radius: 15px;
   border: none;
   background-color: var(--header-color);
   cursor: pointer;
-  padding: 10px 20px;
 }
 .stack button:hover {
   background-color: #7e74ef;
@@ -411,20 +412,14 @@ p {
   bottom: 0;
 }
 .see-more {
-  display: block;
   margin: 20px 0;
 }
-.works button {
+.works a {
   font-size: var(--link-FS);
-  padding: 10px 20px;
-  width: 200px;
-  border: 2px solid var(--border-col);
-  background-color: transparent;
-  border-radius: 10px;
-  transition: all 8ms;
+  color: rgba(216, 24, 24, 0.53);
 }
 
-.works button:hover {
+.works a:hover {
   border-color: var(--header-color);
   color: #7e74ef;
 }
@@ -535,7 +530,7 @@ fieldset button:hover {
   .icons {
     flex-flow: row;
     padding: 2rem;
-    gap: 8rem;
+    gap: 3rem;
   }
   .stack-list img {
     width: 200px;
@@ -588,7 +583,7 @@ fieldset button:hover {
 @keyframes scroll {
   from {
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0.2);
   }
 
   to {
