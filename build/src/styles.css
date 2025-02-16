@@ -103,7 +103,7 @@ nav {
   left: -100%;
   background-color: var(--header-color);
   font-size: 2rem;
-  transition: all 0.93 ease-in-out;
+  transition: all 0.5s linear;
 }
 
 .mobile-links ul {
@@ -231,6 +231,7 @@ main {
 }
 
 .contacts {
+  margin: 0px auto;
   width: 100%;
   /* overflow-x: hidden; */
   background-color: #ffffff;
@@ -288,13 +289,13 @@ main {
   display: inline-block;
   animation: slide-show 7s linear infinite;
 }
-.stack::before {
+.stack-container::before {
   top: 0;
   left: 0;
   content: "";
   position: absolute;
-  width: 200px;
-  height: 100%;
+  width: 14.5rem;
+  height: 94%;
   z-index: 2;
   background: linear-gradient(
     to left,
@@ -302,13 +303,13 @@ main {
     var(--background)
   );
 }
-.stack::after {
+.stack-container::after {
   top: 0;
   right: 0;
   content: "";
   position: absolute;
-  width: 250px;
-  height: 100%;
+  width: 16rem;
+  height: 94%;
   z-index: 2;
   background: linear-gradient(
     to right,
@@ -325,20 +326,16 @@ main {
   animation-play-state: paused;
 }
 
-.stack button {
+.peep {
   text-align: center;
-  margin-top: 20px;
-  font-family: var(--body-Font);
-  padding: 10px 7px;
-  font-size: 1rem;
-  font-weight: bolder;
-  border-radius: 15px;
-  border: none;
-  background-color: var(--header-color);
-  cursor: pointer;
+  margin-top: 2rem;
+  display: block;
+  transition: all 1s;
+  padding: 0.7rem 1.2rem;
 }
-.stack button:hover {
-  background-color: #7e74ef;
+
+.peep:hover {
+  background: linear-gradient(to right, transparent, #7e74ef, transparent);
 }
 
 /* Works  */
