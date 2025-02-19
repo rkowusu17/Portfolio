@@ -102,8 +102,9 @@ nav {
   top: 0;
   left: -100%;
   background-color: var(--header-color);
+  border-radius: 20px;
   font-size: 2rem;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-in-out;
 }
 
 .mobile-links ul {
@@ -283,7 +284,12 @@ main {
   background-color: var(--background);
   overflow: hidden;
   padding: 2rem;
+}
+.stack-container {
+  width: 100%;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .stack-list {
   display: inline-block;
@@ -294,8 +300,8 @@ main {
   left: 0;
   content: "";
   position: absolute;
-  width: 14.5rem;
-  height: 94%;
+  width: 30%;
+  height: 90%;
   z-index: 2;
   background: linear-gradient(
     to left,
@@ -303,20 +309,17 @@ main {
     var(--background)
   );
 }
-.stack-container::after {
+/* .stack-container::after {
   top: 0;
   right: 0;
   content: "";
   position: absolute;
-  width: 16rem;
-  height: 94%;
+  width: 30%;
+  height: 90%;
   z-index: 2;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0),
-    var(--background)
-  );
-}
+  background: linear-gradient(to right, var(--background), var(--background));
+  margin-right: 0px;
+} */
 .stack-list img {
   padding: 0 20px;
   margin: 20px 2rem;
@@ -328,10 +331,11 @@ main {
 
 .peep {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: block;
   transition: all 1s;
-  padding: 0.7rem 1.2rem;
+  padding: 2rem;
+  font-size: 1rem;
 }
 
 .peep:hover {
