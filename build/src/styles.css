@@ -41,6 +41,10 @@ body {
   font-family: var(--body-Font);
 }
 
+/* img {
+  width: fit-content;
+} */
+
 header {
   width: 100%;
   background-color: var(--header-color);
