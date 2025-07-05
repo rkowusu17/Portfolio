@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
+import DarkModeToggle from "./DarkMode";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,6 +64,7 @@ const Header = () => {
           >
             <Menu className="w-6 h-6 text-gray-700" />
           </button>
+          <DarkModeToggle />
         </div>
 
         {/* Mobile Navigation */}

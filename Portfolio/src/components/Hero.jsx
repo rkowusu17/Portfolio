@@ -15,10 +15,10 @@ const Hero = () => {
       <Header />
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 mt-12"
+        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 mt-10  dark:bg-gradient-to-b dark:from-slate-900 dark:via-black dark:to-slate-800 "
       >
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-7xl mx-auto flex flex-col-reverse gap-10 md:flex-row items-center justify-between ">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse md:gap-10 md:flex-row items-center justify-between ">
             <div className="flex-1 flex flex-col items-center max-w-[70%]">
               <h1 className="text-3xl text-center md:text-7xl font-bold p-8 mb-5 bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent animate-fade-in whitespace-nowrap">
                 Reg-Dev
@@ -59,7 +59,7 @@ const Hero = () => {
               </div>
             </div>
             <div
-              className="max-w-xl flex flex-col items-center gap-5 animate-fade-in"
+              className="max-w-xl flex flex-col items-center gap-2 md:gap-5 animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
               <img
