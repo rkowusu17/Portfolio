@@ -18,7 +18,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white  dark:bg-gray-800">
+    <section id="about" className="py-20 bg-white  dark:bg-slate-800">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto animate-fade-in-scroll">
           <h2 className="text-4xl font-bold text-center mb-16 textGradient">
@@ -54,7 +54,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold dark:text-slate-100 mb-6 text-gray-800">
                 Skills & Technologies
               </h3>
-              <TechStack />
+              <TechStack className="animate-fade-in-scroll" />
             </div>
           </div>
         </div>

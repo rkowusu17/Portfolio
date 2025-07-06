@@ -1,42 +1,7 @@
 import { Github, Projector } from "lucide-react";
+import { projects } from "../assets/assets";
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "TailwindCSS"],
-      image:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop",
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates, team collaboration features, and progress tracking.",
-      technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
-      image:
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description:
-        "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-      demoUrl: "#",
-      githubUrl: "#",
-    },
-  ];
-
   return (
     <section
       id="projects"
@@ -52,7 +17,7 @@ const Projects = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 cursor-pointer dark:bg-slate-700 animate-fade-in-scroll"
               >
                 <div className="h-48 overflow-hidden">
                   <img
@@ -63,10 +28,10 @@ const Projects = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-slate-300">
                     {project.title}
                   </h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed dark:text-slate-300">
                     {project.description}
                   </p>
 
@@ -91,7 +56,7 @@ const Projects = () => {
                     </a>
                     <a
                       href={project.githubUrl}
-                      className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200"
+                      className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200 dark:text-blue-600"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -101,6 +66,11 @@ const Projects = () => {
               </div>
             ))}
           </div>
+          <a href="https://github.com/rkowusu17">
+            <button className="w-[10rem] my-5 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200">
+              See more
+            </button>
+          </a>
         </div>
       </div>
     </section>
