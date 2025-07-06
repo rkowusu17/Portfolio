@@ -39,7 +39,7 @@ export const projects = [
       "A web app for tracking your daily moods. This helps you detect your mood swings daily while focusing on cheering you up. 'Built with love💖'. Watch out for further upgrades😉 ",
     technologies: ["React", "Firebase", "Firestore", "TailwindCSS"],
     image: moodle_img,
-    demoUrl: "#",
+    demoUrl: "https://mooddle.vercel.app/dashboard",
     githubUrl: "https://github.com/rkowusu17/Mooddle",
   },
   {
