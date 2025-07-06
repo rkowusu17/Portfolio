@@ -15,7 +15,7 @@ const Hero = () => {
       <Header />
       <section
         id="hero"
-        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 mt-10  dark:bg-gradient-to-b dark:from-slate-900 dark:via-black dark:to-slate-800 "
+        className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 mt-12  dark:bg-gradient-to-b dark:from-slate-900 dark:via-black dark:to-slate-800 scroll-mt-10"
       >
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-7xl mx-auto flex flex-col-reverse md:gap-10 md:flex-row items-center justify-between ">
