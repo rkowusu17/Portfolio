@@ -31,21 +31,25 @@ const About = () => {
                 Passionate Developer & Innovator.
               </h3>
               <p className="text-gray-600 dark:text-slate-100 mb-6 leading-relaxed">
-                I'm a dedicated software developer with over 2 years of
-                experience building web applications that solve real-world
-                problems. My journey started with curiosity about how computers
-                work, and it has evolved into a passion for creating digital
-                solutions that make people's lives easier.
+                Hello, and welcome to my portfolio. It all started with a
+                curiosity for how things (systems) really work. This made me
+                develop much interest in system designs and data science, but I
+                realized users can't use my systems or models without
+                interacting with an interface, so I had to learn software
+                development. Specifically <b>Front-End</b>. I am passionate
+                about backend with Python too.
               </p>
               <p className=" dark:text-slate-100 text-gray-600 mb-6 leading-relaxed">
                 I believe in hard work, consistency and writing clean,
                 maintainable code and also staying up-to-date with the latest
-                technologies. When I'm not coding, you'll find me mentoring
-                aspiring developers or playing the guitar 🎸🔥.
+                technologies. With my 3+ years of experience in software
+                development I think I have learnt enough for me to develop clean
+                UI/UX for my future models😉. When I'm not coding, you'll find
+                me mentoring aspiring developers or playing the guitar 🎸🔥.
               </p>
               <p className="dark:text-slate-100 text-gray-600 leading-relaxed">
-                My goal is to build solution-oriented applications that not only
-                function perfectly but also provide exceptional user
+                My goal is to build solution-oriented applications that will not
+                only function perfectly but also provide exceptional user
                 experiences.
               </p>
             </div>
