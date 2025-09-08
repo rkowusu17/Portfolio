@@ -31,8 +31,8 @@ const About = () => {
                 Passionate Developer & Innovator.
               </h3>
               <p className="text-gray-600 dark:text-slate-100 mb-6 leading-relaxed">
-                Hello, and welcome to my portfolio. It all started with a
-                curiosity for how things (systems) really work. This made me
+                Hello, and welcome to my portfolio. So it all started with a
+                curiosity for how things (systems) really worked. This made me
                 develop much interest in system designs and data science, but I
                 realized users can't use my systems or models without
                 interacting with an interface, so I had to learn software
