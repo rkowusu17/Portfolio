@@ -59,6 +59,18 @@ const About = () => {
                 Skills & Technologies
               </h3>
               <TechStack className="animate-fade-in-scroll" />
+              <div className="text-center mt-8 text-gray-600 dark:text-slate-100">
+                Have a peep at my
+                <a
+                  href="https://drive.google.com/file/d/18r8iOXvUagou_c4VCESeeEYg6nRTUUAI/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-blue-500 hover:underline ml-1">
+                    <strong>Curriculum Vitae (CV)</strong>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
