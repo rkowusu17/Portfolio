@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:bg-gradient-to-b dark:from-slate-800 dark:via-black dark:to-slate-900"
     >
-      <div className="container mx-auto px-4">
+      <div className="container px-4">
         <div className="max-w-6xl mx-auto animate-fade-in-scroll">
           <h2 className="text-4xl font-bold p-4 text-center mb-16 textGradient ">
             Featured Projects
@@ -50,6 +50,7 @@ const Projects = () => {
                     <a
                       href={project.demoUrl}
                       className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg text-sm font-medium hover:shadow-lg transition-shadow duration-200"
+                      target="_blank"
                     >
                       <Projector className="w-4 h-4" />
                       Demo
@@ -57,6 +58,7 @@ const Projects = () => {
                     <a
                       href={project.githubUrl}
                       className="flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors duration-200 dark:text-blue-600"
+                      target="_blank"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -66,7 +68,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <a href="https://github.com/rkowusu17">
+          <a target="_blank" href="https://github.com/rkowusu17">
             <button className="w-[10rem] my-5 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200">
               See more
             </button>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Twitter } from "lucide-react";
+import { Linkedin, Mail, Twitter } from "lucide-react";
 import { toast } from "react-toastify";
 
 const socialLinks = [
@@ -14,6 +14,12 @@ const socialLinks = [
     icon: Twitter,
     url: "https://x.com/Re_ggie12",
     color: "hover:text-purple-600",
+  },
+  {
+    name: "LinkedIn",
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/reginald-owusu-b16ba5202/",
+    color: "hover:text-blue-600",
   },
 ];
 
@@ -61,12 +67,15 @@ const Contact = () => {
     if (data.success) {
       setResult("");
       toast.success("Form Submitted Successfully , Thanks for your feedback");
-      event.target.reset();
     } else {
       console.log("Error", data);
       toast.error(data.message); // Alert the user with the error message
       setResult("");
+      // setFormData({ name: " ", email: " ", message: " " });
     }
+
+    event.target.reset();
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
